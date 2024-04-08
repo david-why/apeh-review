@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { getLocalState, setLocalState } from '@/store'
+import { notification } from 'ant-design-vue'
+import { ref } from 'vue'
+
+const resetModalOpen = ref(false)
 
 function exportProgress() {
   const data = JSON.stringify(getLocalState())
@@ -24,9 +28,15 @@ function importProgress() {
     const data = await file.text()
     const state = JSON.parse(data)
     setLocalState(state)
-    alert('Progress imported successfully!')
+    notification.info({ message: 'Progress imported successfully!' })
   }
   input.click()
+}
+
+function resetProgress() {
+  resetModalOpen.value = false
+  setLocalState({})
+  notification.info({ message: 'Progress reset successfully!' })
 }
 </script>
 
@@ -43,9 +53,7 @@ function importProgress() {
     Topics are what you often see in your textbook, for example "1.1 Contextualizing Renaissance and
     Discovery". Most people study by topics, so this is a good place to start.
   </p>
-  <p>
-    Go to <router-link to="/topic">Topics</router-link> to begin!
-  </p>
+  <p>Go to <router-link to="/topic">Topics</router-link> to begin!</p>
   <h2>Concepts</h2>
   <p>
     Concepts are less well-known than topics. They are called "Key Concepts" in the CED, and
@@ -57,7 +65,7 @@ function importProgress() {
     Some concepts have "Illustrative Examples" in the CED to go with them. These are also included
     on this website.
   </p>
-  <p>Use the sidebar to the left to get started!</p>
+  <p>Go to <router-link to="/concept">Concepts</router-link> to begin!</p>
   <h2>Saving your progress</h2>
   <p>
     On this website, you can save your progress by changing the status of each concept and example.
@@ -71,5 +79,14 @@ function importProgress() {
   <a-space>
     <a-button @click="exportProgress">Export progress</a-button>
     <a-button @click="importProgress">Import progress</a-button>
+    <a-button @click="resetModalOpen = true" danger>Reset progress</a-button>
   </a-space>
+  <a-modal
+    v-model:open="resetModalOpen"
+    title="Are you sure you want to reset your progress?"
+    centered
+    @ok="resetProgress"
+  >
+    <p>This process cannot be reversed!</p>
+  </a-modal>
 </template>
