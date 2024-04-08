@@ -38,17 +38,14 @@ function onKeyDown(ev: KeyboardEvent) {
   ) {
     return
   }
+  ev.preventDefault()
   if (ev.key === 'n') {
-    ev.preventDefault()
     setStatus(id, 'not-started')
   } else if (ev.key === 's') {
-    ev.preventDefault()
     setStatus(id, 'skipped')
   } else if (ev.key === 'f') {
-    ev.preventDefault()
     setStatus(id, 'flagged')
   } else if (ev.key === 'r') {
-    ev.preventDefault()
     setStatus(id, 'reviewed')
   }
 }
