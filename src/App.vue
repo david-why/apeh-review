@@ -17,7 +17,13 @@ import { breadcrumb } from '@/store'
       <a-layout-content class="scroll content">
         <a-layout class="content-layout">
           <a-breadcrumb class="breadcrumb">
-            <a-breadcrumb-item v-for="item in breadcrumb" :key="item">{{ item }}</a-breadcrumb-item>
+            <a-breadcrumb-item
+              v-for="item in breadcrumb"
+              :key="item.name"
+              :href="item.to ? 'javascript:void(0)' : undefined"
+              @click="item.to && $router.push(item.to)"
+              >{{ item.name }}</a-breadcrumb-item
+            >
           </a-breadcrumb>
           <a-layout-content class="main">
             <router-view :key="$route.fullPath"></router-view>
@@ -56,10 +62,13 @@ import { breadcrumb } from '@/store'
   padding: 1em;
   text-align: center;
 }
-@media (min-width: 1024px) {
-  .layout {
-    overflow-y: hidden;
-    height: 100vh;
+.layout {
+  overflow-y: hidden;
+  height: 100vh;
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
   }
 }
 </style>

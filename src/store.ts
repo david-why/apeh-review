@@ -1,6 +1,7 @@
 import { ref } from 'vue'
+import type { RouteLocationRaw } from 'vue-router'
 
-export const breadcrumb = ref([] as string[])
+export const breadcrumb = ref([] as { name: string; to?: RouteLocationRaw }[])
 
 export declare type Status = 'not-started' | 'skipped' | 'flagged' | 'reviewed'
 

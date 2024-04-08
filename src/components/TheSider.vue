@@ -162,8 +162,11 @@ function beforeEach(to: RouteLocationNormalized) {
   try {
     if (to.name === 'concept' || to.name === 'topic') {
       breadcrumb.value = [
-        'Home',
-        to.name.substring(0, 1).toUpperCase() + to.name.substring(1) + 's'
+        { name: 'Home', to: { name: 'home' } },
+        {
+          name: to.name.substring(0, 1).toUpperCase() + to.name.substring(1) + 's',
+          to: to.params.id ? { name: to.name } : undefined
+        }
       ]
       if (!to.params.id) {
         setSelect(to.name)
@@ -173,18 +176,26 @@ function beforeEach(to: RouteLocationNormalized) {
       setSelect(to.name === 'topic' ? `TP-${current}` : current)
       let parent = current
       while (parent.includes('.')) {
-        breadcrumb.value.splice(2, 0, parent)
+        breadcrumb.value.splice(2, 0, {
+          name: parent,
+          to: parent === current ? undefined : { name: to.name, params: { id: parent } }
+        })
         if (!expanded.value.includes(parent)) {
           expanded.value = expanded.value.concat([parent])
         }
         parent = parent.split('.').slice(0, -1).join('.')
       }
       if (to.name === 'topic') {
-        breadcrumb.value.splice(2, 0, `Unit ${current.split('.')[0]}`)
+        breadcrumb.value.splice(2, 0, {
+          name: `Unit ${current.split('.')[0]}`,
+          to: current.includes('.')
+            ? { name: 'topic', params: { id: current.split('.')[0] } }
+            : undefined
+        })
       }
     } else {
       const name = to.name as string
-      breadcrumb.value = [name.substring(0, 1).toUpperCase() + name.substring(1)]
+      breadcrumb.value = [{ name: name.substring(0, 1).toUpperCase() + name.substring(1) }]
       selected.value = [name]
     }
   } finally {
@@ -334,7 +345,6 @@ onUnmounted(() => {
 
 <template>
   <div class="sider-container" ref="sider">
-    <p><a-button @click="expandAll">Expand all</a-button></p>
     <p>
       <a-tree
         :tree-data="treeData"
@@ -343,6 +353,7 @@ onUnmounted(() => {
         @select="onSelect"
       ></a-tree>
     </p>
+    <p><a-button @click="expandAll">Expand all</a-button></p>
   </div>
 </template>
 
