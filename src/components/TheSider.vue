@@ -105,25 +105,28 @@ function onSelect(selectedKeys: (string | number)[], info: { node: { key: string
   if (typeof key !== 'string') {
     return
   }
+  if (!expanded.value.includes(key)) {
+    expanded.value = expanded.value.concat([key])
+  }
   if (key.startsWith('KC-')) {
-    if (!expanded.value.includes(key)) {
-      expanded.value = expanded.value.concat([key])
-    }
     if (route.name === 'concept' && route.params.id === key) {
       return
     }
-    router.push({ name: 'concept', params: { id: key } })
-  } else if (key.startsWith('TP-')) {
-    if (!expanded.value.includes(key)) {
-      expanded.value = expanded.value.concat([key])
+    if (route.name !== 'concept' || route.params.id !== key) {
+      router.push({ name: 'concept', params: { id: key } })
     }
+  } else if (key.startsWith('TP-')) {
     const id = key.substring(3)
     if (route.name === 'topic' && route.params.id === id) {
       return
     }
-    router.push({ name: 'topic', params: { id } })
+    if (route.name !== 'topic' || route.params.id !== id) {
+      router.push({ name: 'topic', params: { id } })
+    }
   } else {
-    router.push({ name: key })
+    if (route.name !== key) {
+      router.push({ name: key })
+    }
   }
 }
 
@@ -150,7 +153,7 @@ function expandAll() {
 
 let inAfterEach = false
 
-function afterEach(to: RouteLocationNormalized) {
+function beforeEach(to: RouteLocationNormalized) {
   // console.log('beforeEach', to)
   if (inAfterEach) {
     return
@@ -163,6 +166,7 @@ function afterEach(to: RouteLocationNormalized) {
         to.name.substring(0, 1).toUpperCase() + to.name.substring(1) + 's'
       ]
       if (!to.params.id) {
+        setSelect(to.name)
         return
       }
       const current = to.params.id as string
@@ -188,7 +192,7 @@ function afterEach(to: RouteLocationNormalized) {
   }
 }
 
-router.afterEach(afterEach)
+router.afterEach(beforeEach)
 
 function onKeyDown(ev: KeyboardEvent) {
   ev.preventDefault()
