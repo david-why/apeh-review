@@ -191,6 +191,7 @@ function afterEach(to: RouteLocationNormalized) {
 router.afterEach(afterEach)
 
 function onKeyDown(ev: KeyboardEvent) {
+  ev.preventDefault()
   if (ev.key === 'Escape') {
     console.log('I want to break free')
     if (ev.target && ev.target instanceof HTMLElement) {
@@ -208,7 +209,6 @@ function onKeyDown(ev: KeyboardEvent) {
   ) {
     return
   }
-  ev.preventDefault()
   if (ev.key === 'ArrowUp') {
     const current = selected.value[0]
     if (
