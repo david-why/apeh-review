@@ -32,8 +32,42 @@ function importProgress() {
 
 <template>
   <h1>Welcome to APEH Review Tree!</h1>
+  <p>
+    This is a website to help you review for your AP European History exam. Most of the content here
+    is taken directly from the AP Course and Exam Description (CED), so you don't need to worry
+    about false information.
+  </p>
+  <p>The website is organized into two major sections: Topics and Concepts.</p>
+  <h2>Topics</h2>
+  <p>
+    Topics are what you often see in your textbook, for example "1.1 Contextualizing Renaissance and
+    Discovery". Most people study by topics, so this is a good place to start.
+  </p>
+  <p>
+    Go to <router-link to="/topic">Topics</router-link> to begin!
+  </p>
+  <h2>Concepts</h2>
+  <p>
+    Concepts are less well-known than topics. They are called "Key Concepts" in the CED, and
+    basically, thet are everything that you need to know for the exam. For example, "KC-1.1.I A
+    revival of classical texts led to new methods of scholarship and new values in both society and
+    religion." is a concept.
+  </p>
+  <p>
+    Some concepts have "Illustrative Examples" in the CED to go with them. These are also included
+    on this website.
+  </p>
   <p>Use the sidebar to the left to get started!</p>
-  <p>(More description and help is coming soon)</p>
+  <h2>Saving your progress</h2>
+  <p>
+    On this website, you can save your progress by changing the status of each concept and example.
+    This will be saved locally in your browser, so you can come back and continue your review later.
+  </p>
+  <p>
+    If you want to export your progress to another device, you can do so by clicking the "Export
+    progress" button below. You can then import the progress on another device by clicking the
+    "Import progress" button.
+  </p>
   <a-space>
     <a-button @click="exportProgress">Export progress</a-button>
     <a-button @click="importProgress">Import progress</a-button>
