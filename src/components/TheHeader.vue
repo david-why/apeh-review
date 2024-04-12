@@ -15,10 +15,9 @@
   <div class="header-content">
     <div class="logo-container">
       <a-button class="logo-btn" type="ghost" @click="$router.push('/')">
-        🌐 APEH Review Tree
+        🌍 David's APEH Review Tree
       </a-button>
     </div>
-    Created with ❤️ by David
     <!-- <a-menu v-model:selected-keys="selectedKeys" theme="dark" mode="horizontal">
       <a-menu-item key="home">Home</a-menu-item>
       <a-menu-item key="concept">Concepts</a-menu-item>
@@ -30,7 +29,7 @@
 <style scoped>
 .header-content {
   height: 100%;
-  /* font-size: 1.2em; */
+  font-size: 1.2em;
   color: rgba(255, 255, 255, 0.65);
 }
 .logo-container {
