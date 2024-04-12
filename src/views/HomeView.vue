@@ -72,14 +72,14 @@ function resetProgress() {
     This will be saved locally in your browser, so you can come back and continue your review later.
   </p>
   <p>
-    If you want to export your progress to another device, you can do so by clicking the "Export
-    progress" button below. You can then import the progress on another device by clicking the
-    "Import progress" button.
+    If you want to export your progress to another device, you can do so by clicking the "Export"
+    button below. You can then import the progress on another device by clicking the "Import"
+    button.
   </p>
-  <a-space>
-    <a-button @click="exportProgress">Export progress</a-button>
-    <a-button @click="importProgress">Import progress</a-button>
-    <a-button @click="resetModalOpen = true" danger>Reset progress</a-button>
+  <a-space wrap>
+    <a-button @click="exportProgress">Export</a-button>
+    <a-button @click="importProgress">Import</a-button>
+    <a-button @click="resetModalOpen = true" danger>Reset</a-button>
   </a-space>
   <a-modal
     v-model:open="resetModalOpen"
@@ -89,4 +89,8 @@ function resetProgress() {
   >
     <p>This process cannot be reversed!</p>
   </a-modal>
+  <!-- <h2>AP Courses</h2>
+  <p>🌏 APWH : AP World History</p>
+  <p>🌍 APEH : AP European History</p>
+  <p>🌎 APUSH : AP United States History</p> -->
 </template>
