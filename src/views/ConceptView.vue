@@ -7,10 +7,10 @@ const route = useRoute()
 const data = getData()
 
 const options = [
-  { label: '⬜ Not started', value: 'not-started' },
-  { label: '⏭ Skipped', value: 'skipped' },
-  { label: '🚩 Flagged', value: 'flagged' },
-  { label: '✅ Reviewed', value: 'reviewed' }
+  { label: '⬜ None', value: 'not-started' },
+  { label: '⏭ Skip', value: 'skipped' },
+  { label: '🚩 Flag', value: 'flagged' },
+  { label: '✅ Done', value: 'reviewed' }
 ]
 const shortOptions = options.map(({ label, value }) => ({ label: label.substring(0, 2), value }))
 
@@ -38,7 +38,6 @@ function onKeyDown(ev: KeyboardEvent) {
   ) {
     return
   }
-  ev.preventDefault()
   if (ev.key === 'n') {
     setStatus(id, 'not-started')
   } else if (ev.key === 's') {
@@ -47,7 +46,10 @@ function onKeyDown(ev: KeyboardEvent) {
     setStatus(id, 'flagged')
   } else if (ev.key === 'r') {
     setStatus(id, 'reviewed')
+  } else {
+    return
   }
+  ev.preventDefault()
 }
 
 onMounted(() => {
@@ -63,10 +65,9 @@ onUnmounted(() => {
     <h1>Concept {{ id }}</h1>
     <p>
       <a-radio-group v-model:value="status">
-        <a-radio-button value="not-started">⬜ None</a-radio-button>
-        <a-radio-button value="skipped">⏭ Skip</a-radio-button>
-        <a-radio-button value="flagged">🚩 Flag</a-radio-button>
-        <a-radio-button value="reviewed">✅ Done</a-radio-button>
+        <a-radio-button v-for="opt in options" :key="opt.value" :value="opt.value">
+          {{ opt.label }}
+        </a-radio-button>
       </a-radio-group>
     </p>
     <p v-if="concept.custom">

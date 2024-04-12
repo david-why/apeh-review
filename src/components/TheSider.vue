@@ -19,7 +19,7 @@ const titles: Record<string, string> = {
 }
 
 for (let unit = 1; unit <= data.max_unit; unit++) {
-  titles[`TP-${unit}`] = `Unit ${unit}`
+  titles[`TP-${unit}`] = `Unit ${unit}. ${data.units[unit]}`
 }
 for (const topic of Object.keys(data.topics)) {
   titles[`TP-${topic}`] = `${topic}. ${data.topics[topic].name}`
@@ -55,7 +55,11 @@ const treeData = computed(() => {
     const unit = topic.split('.').map(Number)[0]
     if (curUnit !== unit || curNode === null) {
       curUnit = unit
-      curNode = { key: `TP-${unit}`, title: `Unit ${unit}`, children: [] as DataNode[] }
+      curNode = {
+        key: `TP-${unit}`,
+        title: `Unit ${unit}. ${data.units[unit]}`,
+        children: [] as DataNode[]
+      }
       // titles[`TP-${unit}`] = `Unit ${unit}`
       topicNode.children.push(curNode)
     }
@@ -124,7 +128,7 @@ function onSelect(selectedKeys: (string | number)[], info: { node: { key: string
       router.push({ name: 'topic', params: { id } })
     }
   } else {
-    if (route.name !== key) {
+    if (route.name !== key || route.params.id) {
       router.push({ name: key })
     }
   }
@@ -154,7 +158,6 @@ function expandAll() {
 let inAfterEach = false
 
 function beforeEach(to: RouteLocationNormalized) {
-  // console.log('beforeEach', to)
   if (inAfterEach) {
     return
   }
@@ -206,7 +209,6 @@ function beforeEach(to: RouteLocationNormalized) {
 router.afterEach(beforeEach)
 
 function onKeyDown(ev: KeyboardEvent) {
-  ev.preventDefault()
   if (ev.key === 'Escape') {
     console.log('I want to break free')
     if (ev.target && ev.target instanceof HTMLElement) {
@@ -215,7 +217,7 @@ function onKeyDown(ev: KeyboardEvent) {
     return
   }
   if (
-    ev.repeat ||
+    // ev.repeat ||
     ev.ctrlKey ||
     ev.metaKey ||
     ev.altKey ||
@@ -332,7 +334,10 @@ function onKeyDown(ev: KeyboardEvent) {
     router.back()
   } else if (ev.key === 'PageDown') {
     router.forward()
+  } else {
+    return
   }
+  ev.preventDefault()
 }
 
 onMounted(() => {
