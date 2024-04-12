@@ -23,6 +23,14 @@ export default defineConfig({
     }
   },
   build: {
-    chunkSizeWarningLimit: 1000
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          data: ['@/assets/data.json'],
+          antd2: ['ant-design-vue/es/tree'],
+          antd: ['ant-design-vue']
+        }
+      }
+    }
   }
 })
