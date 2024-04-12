@@ -21,7 +21,13 @@ const router = createRouter({
       name: 'topic',
       component: TopicView
     }
-  ]
+  ],
+  scrollBehavior() {
+    const el = document.getElementById('main-content')
+    if (el) {
+      el.scrollTo(0, 0)
+    }
+  }
 })
 
 export default router

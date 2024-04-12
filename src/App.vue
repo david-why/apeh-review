@@ -14,7 +14,7 @@ import { breadcrumb } from '@/store'
     <a-layout-header class="header"><TheHeader></TheHeader></a-layout-header>
     <a-layout>
       <a-layout-sider width="300" class="scroll sidebar"><TheSider></TheSider></a-layout-sider>
-      <a-layout-content class="scroll content">
+      <a-layout-content id="main-content" class="scroll content">
         <a-layout class="content-layout">
           <a-breadcrumb class="breadcrumb">
             <a-breadcrumb-item
@@ -40,6 +40,8 @@ import { breadcrumb } from '@/store'
   overflow-y: auto;
 }
 .header {
+  height: 56px;
+  line-height: 56px;
 }
 .sidebar {
   background: #fff;
@@ -47,14 +49,14 @@ import { breadcrumb } from '@/store'
 .content {
 }
 .content-layout {
-  padding: 0 1.5em 1.5em;
+  padding: 0 0 1em 1em;
 }
 .breadcrumb {
   margin: 1em 0;
 }
 .main {
   background: #fff;
-  padding: 1.5em;
+  padding: 1em;
   min-height: 280px;
 }
 .footer {
