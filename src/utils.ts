@@ -17,6 +17,9 @@ declare interface Data {
       concepts: string[]
     }
   }
+  units: {
+    [key: string]: string
+  }
   max_unit: number
 }
 
@@ -24,7 +27,7 @@ export const statusStyle: Record<Status, CSSProperties> = {
   'not-started': {},
   skipped: { color: 'gray', textDecoration: 'line-through' },
   flagged: { color: 'red' },
-  reviewed: { color: 'green' }
+  reviewed: { color: '#00bb00' }
 }
 
 export function count(str: string, substr: string): number {
@@ -65,6 +68,10 @@ export function findTopics(unit: number): string[] {
   return Object.keys(data.topics)
     .filter((key) => key.startsWith(unit + '.'))
     .sort((a, b) => Number(a.split('.')[1]) - Number(b.split('.')[1]))
+}
+
+export function findUnits(): string[] {
+  return Object.keys(data.units).sort()
 }
 
 export function findRootConcepts(): string[] {
