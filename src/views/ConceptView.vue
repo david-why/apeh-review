@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { getStatus, setStatus } from '@/store'
-import { findChildren, getData, statusStyle } from '@/utils'
+import { findChildren, findRootConcepts, getData, statusStyle } from '@/utils'
 import { computed, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
@@ -63,10 +63,10 @@ onUnmounted(() => {
     <h1>Concept {{ id }}</h1>
     <p>
       <a-radio-group v-model:value="status">
-        <a-radio-button value="not-started">⬜ Not started</a-radio-button>
-        <a-radio-button value="skipped">⏭ Skipped</a-radio-button>
-        <a-radio-button value="flagged">🚩 Flagged</a-radio-button>
-        <a-radio-button value="reviewed">✅ Reviewed</a-radio-button>
+        <a-radio-button value="not-started">⬜ None</a-radio-button>
+        <a-radio-button value="skipped">⏭ Skip</a-radio-button>
+        <a-radio-button value="flagged">🚩 Flag</a-radio-button>
+        <a-radio-button value="reviewed">✅ Done</a-radio-button>
       </a-radio-group>
     </p>
     <p v-if="concept.custom">
@@ -131,11 +131,19 @@ onUnmounted(() => {
       are related to it.
     </p>
     <p>You can navigate the sidebar to browse all the concepts in the APEH CED.</p>
+    <a-list :data-source="findRootConcepts()" size="small">
+      <template #renderItem="{ item }">
+        <a-list-item>
+          <router-link :to="{ name: 'concept', params: { id: item } }"> {{ item }}. </router-link>
+          {{ data.concepts[item].text }}
+        </a-list-item>
+      </template>
+    </a-list>
   </template>
 </template>
 
 <style scoped>
 .status-select {
-  width: 60px;
+  width: 70px;
 }
 </style>

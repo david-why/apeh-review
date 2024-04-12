@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getData, findTopics } from '@/utils'
+import { getData, findTopics, findUnits } from '@/utils'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
@@ -23,8 +23,7 @@ const topic = computed(() => data.topics[id])
     </a-list>
   </template>
   <template v-else-if="id">
-    <h1>Unit {{ id }}</h1>
-    <h2>Topics</h2>
+    <h1>Unit {{ id }}. {{ data.units[id] }}</h1>
     <a-list :data-source="findTopics(Number(id))" size="small">
       <template #renderItem="{ item }">
         <a-list-item>
@@ -42,5 +41,14 @@ const topic = computed(() => data.topics[id])
       organized via these topics.
     </p>
     <p>You can use the sidebar to select a unit/topic to view the concepts within them.</p>
+    <a-list :data-source="findUnits()" size="small">
+      <template #renderItem="{ item }">
+        <a-list-item>
+          <router-link :to="{ name: 'topic', params: { id: item } }">
+            Unit {{ item }}. {{ data.units[item] }}
+          </router-link>
+        </a-list-item>
+      </template>
+    </a-list>
   </template>
 </template>
