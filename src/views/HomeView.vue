@@ -124,6 +124,10 @@ function resetProgress() {
         respectively.
       </li>
       <li>
+        <kbd>PageUp</kbd>, <kbd>PageDown</kbd>: Go to the previous and next pages in the browsing
+        history.
+      </li>
+      <li>
         <kbd>n</kbd>, <kbd>s</kbd>, <kbd>f</kbd>, <kbd>d</kbd>: Marks the current concept as None,
         Skipped, Flagged, and Done, respectively. (<kbd>r</kbd> for "Reviewed" is a synonym to
         <kbd>d</kbd>.)
