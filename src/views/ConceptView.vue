@@ -44,7 +44,7 @@ function onKeyDown(ev: KeyboardEvent) {
     setStatus(id, 'skipped')
   } else if (ev.key === 'f') {
     setStatus(id, 'flagged')
-  } else if (ev.key === 'r') {
+  } else if (ev.key === 'd' || ev.key === 'r') {
     setStatus(id, 'reviewed')
   } else {
     return
