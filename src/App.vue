@@ -5,11 +5,6 @@ import { breadcrumb } from '@/store'
 </script>
 
 <template>
-  <!-- <div class="content">
-    <header class="header"><the-header></the-header></header>
-    <aside class="sidebar"></aside>
-    <main class="main"><router-view :key="$route.fullPath"></router-view></main>
-  </div> -->
   <a-layout class="layout">
     <a-layout-header class="header"><TheHeader></TheHeader></a-layout-header>
     <a-layout>
@@ -31,7 +26,6 @@ import { breadcrumb } from '@/store'
         </a-layout>
       </a-layout-content>
     </a-layout>
-    <!-- <a-layout-footer class="footer">Created with ❤️ by David</a-layout-footer> -->
   </a-layout>
 </template>
 
@@ -45,8 +39,6 @@ import { breadcrumb } from '@/store'
 }
 .sidebar {
   background: #fff;
-}
-.content {
 }
 .content-layout {
   padding: 0 0 1em 1em;

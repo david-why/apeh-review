@@ -234,16 +234,12 @@ function onKeyDown(ev: KeyboardEvent) {
     ) {
       const parent = current.split('.').slice(0, -1).join('.')
       setSelect(parent)
-      return
     } else if (current.startsWith('KC-')) {
       setSelect('concept')
-      return
     } else if (current.startsWith('TP-')) {
       setSelect('topic')
-      return
     } else if (current === 'topic' || current === 'concept') {
       setSelect('home')
-      return
     }
   } else if (ev.key === 'ArrowDown') {
     const current = selected.value[0]
@@ -251,26 +247,20 @@ function onKeyDown(ev: KeyboardEvent) {
       const children = findChildren(current)
       if (children.length > 0) {
         setSelect(children[0])
-        return
       }
     } else if (current.startsWith('TP-') && !current.includes('.')) {
       setSelect(current + '.1')
-      return
     } else if (current.startsWith('TP-')) {
       const children = data.topics[current.substring(3)].concepts
       if (children.length) {
         setSelect(children[0])
-        return
       }
     } else if (current === 'concept') {
       setSelect(root[0])
-      return
     } else if (current === 'topic') {
       setSelect('TP-1')
-      return
     } else if (current === 'home') {
       setSelect('topic')
-      return
     }
   } else if (ev.key === 'ArrowRight') {
     const current = selected.value[0]
@@ -280,13 +270,11 @@ function onKeyDown(ev: KeyboardEvent) {
         const next = `${unit}.${topic + 1}`
         if (data.topics[next]) {
           setSelect(`TP-${next}`)
-          return
         }
       } else {
         const unit = Number(current.substring(3))
         if (unit + 1 <= data.max_unit) {
           setSelect(`TP-${unit + 1}`)
-          return
         }
       }
     } else if (current.startsWith('KC-')) {
@@ -295,11 +283,9 @@ function onKeyDown(ev: KeyboardEvent) {
       const idx = siblings.indexOf(current)
       if (idx < siblings.length - 1) {
         setSelect(siblings[idx + 1])
-        return
       }
     } else if (current === 'topic') {
       setSelect('concept')
-      return
     }
   } else if (ev.key === 'ArrowLeft') {
     const current = selected.value[0]
@@ -309,13 +295,11 @@ function onKeyDown(ev: KeyboardEvent) {
         const prev = `${unit}.${topic - 1}`
         if (data.topics[prev]) {
           setSelect(`TP-${prev}`)
-          return
         }
       } else {
         const unit = Number(current.substring(3))
         if (unit - 1 >= 1) {
           setSelect(`TP-${unit - 1}`)
-          return
         }
       }
     } else if (current.startsWith('KC-')) {
@@ -324,11 +308,9 @@ function onKeyDown(ev: KeyboardEvent) {
       const idx = siblings.indexOf(current)
       if (idx > 0) {
         setSelect(siblings[idx - 1])
-        return
       }
     } else if (current === 'concept') {
       setSelect('topic')
-      return
     }
   } else if (ev.key === 'PageUp') {
     router.back()
