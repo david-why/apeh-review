@@ -11,7 +11,7 @@ function count(status: Status) {
     return 0
   }
   for (const concept of Object.keys(state)) {
-    if (state[concept] === status) {
+    if (data.concepts[concept] && state[concept] === status) {
       count++
     }
   }
