@@ -93,9 +93,10 @@ const selected = ref(['concept'])
 const expanded = ref(['concept', 'topic'])
 
 function onSelect(selectedKeys: (string | number)[], info: { node: { key: string | number } }) {
+  const key = info.node.key
   if (sider.value) {
     const node = document.evaluate(
-      `//*[text()="${titles[info.node.key] || info.node.key}"]`,
+      `//*[text()="${titles[key] || key}" or text()="${key + ' (*)'}"]`,
       sider.value,
       null,
       XPathResult.FIRST_ORDERED_NODE_TYPE,
@@ -105,7 +106,6 @@ function onSelect(selectedKeys: (string | number)[], info: { node: { key: string
       node.scrollIntoView()
     }
   }
-  const key = info.node.key
   if (typeof key !== 'string') {
     return
   }
