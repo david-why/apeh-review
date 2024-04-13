@@ -10,6 +10,7 @@ const localState = JSON.parse(localStorage.getItem('apeh-review-state') || '{}')
 const stateCounter = ref(0)
 
 export function getLocalState() {
+  stateCounter.value
   return localState
 }
 
