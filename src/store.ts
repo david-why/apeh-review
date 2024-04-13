@@ -33,3 +33,30 @@ export function setStatus(id: string, status: Status) {
   localStorage.setItem('apeh-review-state', JSON.stringify(localState))
   stateCounter.value++
 }
+
+declare interface Settings {
+  proSwitch: boolean
+  expandDefault: boolean
+}
+
+const settingsCounter = ref(0)
+
+export function getSettings() {
+  settingsCounter.value
+  return JSON.parse(localStorage.getItem('apeh-review-settings') || '{}')
+}
+
+export function setSettings(settings: Record<string, any>) {
+  localStorage.setItem('apeh-review-settings', JSON.stringify(settings))
+  settingsCounter.value++
+}
+
+export function getSetting<T extends keyof Settings>(key: T): Settings[T] {
+  return getSettings()[key]
+}
+
+export function setSetting<T extends keyof Settings>(key: T, value: Settings[T]) {
+  const settings = getSettings()
+  settings[key] = value
+  setSettings(settings)
+}

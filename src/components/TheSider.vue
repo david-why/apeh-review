@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { breadcrumb, getStatus } from '@/store'
+import { breadcrumb, getSetting, getStatus } from '@/store'
 import { count, findChildren, findRootConcepts, getData, statusStyle } from '@/utils'
 import type { DataNode } from 'ant-design-vue/es/tree'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
@@ -206,8 +206,6 @@ function beforeEach(to: RouteLocationNormalized) {
   }
 }
 
-router.afterEach(beforeEach)
-
 function onKeyDown(ev: KeyboardEvent) {
   if (ev.key === 'Escape') {
     console.log('I want to break free')
@@ -322,11 +320,18 @@ function onKeyDown(ev: KeyboardEvent) {
   ev.preventDefault()
 }
 
+const removeAfterEach = ref()
+
 onMounted(() => {
   document.addEventListener('keydown', onKeyDown)
+  removeAfterEach.value = router.afterEach(beforeEach)
+  if (getSetting('expandDefault')) {
+    expandAll()
+  }
 })
 onUnmounted(() => {
   document.removeEventListener('keydown', onKeyDown)
+  removeAfterEach.value()
 })
 </script>
 
