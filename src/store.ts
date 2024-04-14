@@ -9,8 +9,49 @@ const localState = JSON.parse(localStorage.getItem('apeh-review-state') || '{}')
 
 const stateCounter = ref(0)
 
-export function getLocalState() {
+const curVersion = 2
+const conv: Record<string, string>[] = [
+  {
+    'KC-3.1.III:1': 'KC-3.2.IV.B:13',
+    'KC-3.1.III:2': 'KC-3.2.IV.B:14',
+    'KC-3.1.III:3': 'KC-3.2.IV.B:15',
+    'KC-3.1.III:4': 'KC-3.2.IV.B:16',
+    'KC-3.1.III:5': 'KC-3.2.IV.B:17'
+  },
+  {
+    'KC-3.1.III.B:1': 'KC-3.1.III.B:6',
+    'KC-3.1.III.B:2': 'KC-3.1.III.B:7',
+    'KC-3.1.III.B:3': 'KC-3.1.III.B:8',
+    'KC-3.1.III.B:4': 'KC-3.1.III.B:9',
+    'KC-3.1.III.B:5': 'KC-3.1.III.B:10',
+    'KC-3.1.III.B:6': 'KC-3.1.III.B:11',
+    'KC-3.1.III.B:7': 'KC-3.1.III.B:12',
+    'KC-3.2.IV.B:8': 'KC-3.1.III.B:1',
+    'KC-3.2.IV.B:9': 'KC-3.1.III.B:2',
+    'KC-3.2.IV.B:10': 'KC-3.1.III.B:3',
+    'KC-3.2.IV.B:11': 'KC-3.1.III.B:4',
+    'KC-3.2.IV.B:13': 'KC-3.2.IV.B:8',
+    'KC-3.2.IV.B:14': 'KC-3.2.IV.B:9',
+    'KC-3.2.IV.B:15': 'KC-3.2.IV.B:10',
+    'KC-3.2.IV.B:16': 'KC-3.2.IV.B:11',
+    'KC-3.2.IV.B:17': 'KC-3.2.IV.B:12'
+  }
+]
+
+export function getLocalState(): Record<string, Status> {
   stateCounter.value
+  const version = localState.version || 0
+  if (localState.version !== curVersion) {
+    for (let i = version; i < curVersion; i++) {
+      for (const key in conv[i]) {
+        if (localState[key] !== undefined) {
+          localState[conv[i][key]] = localState[key]
+          delete localState[key]
+        }
+      }
+    }
+    localState.version = curVersion
+  }
   return localState
 }
 
@@ -24,11 +65,11 @@ export function setLocalState(state: Record<string, Status>) {
 }
 
 export function getStatus(id: string): Status {
-  stateCounter.value
-  return localState[id] || 'not-started'
+  return getLocalState()[id] || 'not-started'
 }
 
 export function setStatus(id: string, status: Status) {
+  const localState = getLocalState()
   localState[id] = status
   localStorage.setItem('apeh-review-state', JSON.stringify(localState))
   stateCounter.value++
