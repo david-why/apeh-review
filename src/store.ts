@@ -19,13 +19,13 @@ const conv: Record<string, string>[] = [
     'KC-3.1.III:5': 'KC-3.2.IV.B:17'
   },
   {
+    'KC-3.1.III.B:6': 'KC-3.1.III.B:11',
+    'KC-3.1.III.B:7': 'KC-3.1.III.B:12',
     'KC-3.1.III.B:1': 'KC-3.1.III.B:6',
     'KC-3.1.III.B:2': 'KC-3.1.III.B:7',
     'KC-3.1.III.B:3': 'KC-3.1.III.B:8',
     'KC-3.1.III.B:4': 'KC-3.1.III.B:9',
     'KC-3.1.III.B:5': 'KC-3.1.III.B:10',
-    'KC-3.1.III.B:6': 'KC-3.1.III.B:11',
-    'KC-3.1.III.B:7': 'KC-3.1.III.B:12',
     'KC-3.2.IV.B:8': 'KC-3.1.III.B:1',
     'KC-3.2.IV.B:9': 'KC-3.1.III.B:2',
     'KC-3.2.IV.B:10': 'KC-3.1.III.B:3',
