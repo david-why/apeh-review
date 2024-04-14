@@ -1962,7 +1962,13 @@
         "Bessemer process",
         "Mass production",
         "Electricity",
-        "Chemicals"
+        "Chemicals",
+        "New industries:",
+        "Chemical industry",
+        "Electricity and utilities",
+        "Automobile",
+        "Leisure travel",
+        "Professional and leisure sport"
       ],
       "topics": [
         "6.3"
@@ -1971,14 +1977,7 @@
     },
     "KC-3.1.III": {
       "text": "During the second industrial revolution (c. 1870\u20131914), more areas of Europe experienced industrial activity, and industrial processes increased in scale and complexity.",
-      "examples": [
-        "New industries:",
-        "Chemical industry",
-        "Electricity and utilities",
-        "Automobile",
-        "Leisure travel",
-        "Professional and leisure sport"
-      ],
+      "examples": [],
       "topics": [
         "6.3"
       ],
