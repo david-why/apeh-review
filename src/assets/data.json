@@ -2012,7 +2012,20 @@
       "text": "Industrialization and mass marketing increased both the production and demand for a new range of consumer goods\u2014including clothing, processed foods, and labor-saving devices\u2014and created more leisure opportunities.",
       "examples": [],
       "topics": [
-        "6.3",
+        "6.3"
+      ],
+      "custom": false
+    },
+    "KC-3.2.IV.C": {
+      "text": "Industrialization in Prussia allowed that state to become the leader of a unified Germany, which subsequently underwent rapid industrialization under government sponsorship.",
+      "examples": [
+        "Industrialization in Prussia:",
+        "Zollverein",
+        "Investment in transportation network",
+        "Adoption of improved methods of manufacturing",
+        "Friedrich List\u2019s National System"
+      ],
+      "topics": [
         "6.3"
       ],
       "custom": false
