@@ -42,7 +42,7 @@ const conv: Record<keyof typeof datasources, Record<string, string>[]> = {
 }
 
 const localState = JSON.parse(
-  localStorage.getItem(data.value.short_name + '-review-state') ||
+  localStorage.getItem(data.value.short_name.toLowerCase() + '-review-state') ||
     JSON.stringify({ version: curVersion[datasource.value] })
 )
 
@@ -53,7 +53,7 @@ watch(data, () => {
   Object.assign(
     localState,
     JSON.parse(
-      localStorage.getItem(data.value.short_name + '-review-state') ||
+      localStorage.getItem(data.value.short_name.toLowerCase() + '-review-state') ||
         JSON.stringify({ version: curVersion[datasource.value] })
     )
   )
@@ -83,7 +83,7 @@ export function setLocalState(state: Record<string, Status>) {
     delete localState[key]
   })
   Object.assign(localState, state)
-  localStorage.setItem(data.value.short_name + '-review-state', JSON.stringify(localState))
+  localStorage.setItem(data.value.short_name.toLowerCase().toLowerCase() + '-review-state', JSON.stringify(localState))
   stateCounter.value++
 }
 
@@ -94,7 +94,7 @@ export function getStatus(id: string): Status {
 export function setStatus(id: string, status: Status) {
   const localState = getLocalState()
   localState[id] = status
-  localStorage.setItem(data.value.short_name + '-review-state', JSON.stringify(localState))
+  localStorage.setItem(data.value.short_name.toLowerCase() + '-review-state', JSON.stringify(localState))
   stateCounter.value++
 }
 
@@ -107,11 +107,11 @@ const settingsCounter = ref(0)
 
 export function getSettings() {
   settingsCounter.value
-  return JSON.parse(localStorage.getItem(data.value.short_name + '-review-settings') || '{}')
+  return JSON.parse(localStorage.getItem(data.value.short_name.toLowerCase() + '-review-settings') || '{}')
 }
 
 export function setSettings(settings: Record<string, any>) {
-  localStorage.setItem(data.value.short_name + '-review-settings', JSON.stringify(settings))
+  localStorage.setItem(data.value.short_name.toLowerCase() + '-review-settings', JSON.stringify(settings))
   settingsCounter.value++
 }
 
