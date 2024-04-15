@@ -1,0 +1,2796 @@
+{
+  "name": "AP World History",
+  "short_name": "APWH",
+  "emoji": "\ud83c\udf0f",
+  "concepts": {
+    "KC-3.1": {
+      "text": "A deepening and widening of networks of human interaction within and across regions contributed to cultural, technological, and biological diffusion within and between various societies.",
+      "examples": [],
+      "topics": [
+        "2.7"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I": {
+      "text": "Technological advancements in transportation and commerce enabled interregional trade and led to the growth of states.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.1.I.A": {
+      "text": "Advancements in transportation and commercial technologies encouraged the expansion of trade, which in turn facilitated the growth of states.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.1.I.A.i": {
+      "text": "Improved commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes\u2014including the Silk Roads\u2014promoting the growth of powerful new trading cities.",
+      "examples": [
+        "Kashgar",
+        "Samarkand"
+      ],
+      "topics": [
+        "2.1",
+        "2.7"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I.A.ii": {
+      "text": "Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the Indian Ocean, promoting the growth of powerful new trading cities.",
+      "examples": [
+        "City-states of the Swahili Coast",
+        "Gujarat",
+        "Sultanate of Malacca"
+      ],
+      "topics": [
+        "2.3"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I.A.iii": {
+      "text": "The Indian Ocean trading network fostered the growth of states.",
+      "examples": [],
+      "topics": [
+        "2.3"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I.A.iv": {
+      "text": "Improved transportation technologies and commercial practices led to an increased volume of trade and expanded the geographical range of existing trade routes, including the trans-Saharan trade network.",
+      "examples": [],
+      "topics": [
+        "2.4"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I.C": {
+      "text": "The growth of interregional trade in luxury goods was encouraged by transportation and commercial technologies.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.1.I.C.i": {
+      "text": "The growth of interregional trade in luxury goods was encouraged by innovations in previously existing transportation and commercial technologies, including the caravanserai, forms of credit, and the development of money economies.",
+      "examples": [
+        "Bills of exchange",
+        "Banking houses",
+        "Use of paper money"
+      ],
+      "topics": [
+        "2.1",
+        "2.7"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I.C.ii": {
+      "text": "The growth of interregional trade in luxury goods was encouraged by significant innovations in previously existing transportation and commercial technologies, including the use of the compass, the astrolabe, and larger ship designs.",
+      "examples": [],
+      "topics": [
+        "2.3"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I.D": {
+      "text": "The economy of Song China flourished as a result of increased productive capacity, expanding trade networks, and innovations in agriculture and manufacturing.",
+      "examples": [
+        "Champa rice",
+        "Transportation innovations, like the Grand Canal expansion",
+        "Steel and iron production",
+        "Textiles and porcelains for export"
+      ],
+      "topics": [
+        "1.1"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I.E": {
+      "text": "The expansion of empires facilitated interregional communication and trade.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.1.I.E.i": {
+      "text": "The expansion of empires\u2014including the Mongols\u2014facilitated Afro-Eurasian trade and communication as new people were drawn into their conquerors\u2019 economies and trade networks.",
+      "examples": [],
+      "topics": [
+        "2.2"
+      ],
+      "custom": false
+    },
+    "KC-3.1.I.E.ii": {
+      "text": "The expansion of empires\u2014including Mali in West Africa\u2013facilitated Afro-Eurasian trade and communication as new people were drawn into the economies and trade networks.",
+      "examples": [],
+      "topics": [
+        "2.4"
+      ],
+      "custom": false
+    },
+    "KC-3.1.II": {
+      "text": "Advancements in transportation technology contributed to interregional contact.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.1.II.A": {
+      "text": "Advancements in transportation technologies and environmental knowledge encouraged interregional trade to develop.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.1.II.A.i": {
+      "text": "The expansion and intensification of long-distance trade routes often depended on environmental knowledge, including advanced knowledge of the monsoon winds.",
+      "examples": [],
+      "topics": [
+        "2.2"
+      ],
+      "custom": false
+    },
+    "KC-3.1.II.A.ii": {
+      "text": "The growth of interregional trade was encouraged by innovations in existing transportation technologies.",
+      "examples": [
+        "Camel saddle",
+        "Caravans"
+      ],
+      "topics": [
+        "2.4"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III": {
+      "text": "Merchant activities and trade contrinuted to cultural diffusion across Afro-Eurasia.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.1.III.A": {
+      "text": "Muslim rule continued to expand to many parts of Afro-Eurasia due to military expansion, and Islam subsequently expanded through the activities of merchants, missionaries, and Sufis.",
+      "examples": [],
+      "topics": [
+        "1.2"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III.B": {
+      "text": "In key places along important trade routes, merchants set up diasporic communities where they introduced their own cultural traditions into the indigenous cultures and, in turn, indigenous cultures influenced merchant cultures.",
+      "examples": [
+        "Arab and Persian communities in East Africa",
+        "Chinese merchant communities in Southeast Asia",
+        "Malay communities in the Indian Ocean basin"
+      ],
+      "topics": [
+        "2.3"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III.C": {
+      "text": "As exchange networks intensified, an increasing number of travelers within Afro-Eurasia wrote about their travels.",
+      "examples": [
+        "Ibn Battuta",
+        "Margery Kempe",
+        "Marco Polo"
+      ],
+      "topics": [
+        "2.5"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III.D": {
+      "text": "Increased cross-cultural interactions resulted in the diffusion of literary, artistic, and cultural traditions, as well as scientific and technological innovations.",
+      "examples": [
+        "The influence of Buddhism in East Asia",
+        "The spread of Hinduism and Buddhism into Southeast Asia",
+        "The spread of Islam in sub-Saharan Africa and Asia",
+        "Gunpowder from China",
+        "Paper from China"
+      ],
+      "topics": [
+        "2.5"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III.D.i": {
+      "text": "Chinese cultural traditions continued, and they influenced neighboring regions.",
+      "examples": [
+        "Filial piety in East Asia",
+        "Influence of Neo-Confucianism and Buddhism in East Asia",
+        "Confucian traditions of both respect for and expected deference from women",
+        "Chinese literary and scholarly traditions and their spread to Heian Japan and Korea"
+      ],
+      "topics": [
+        "1.1"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III.D.ii": {
+      "text": "Buddhism and its core beliefs continued to shape societies in Asia and included a variety of branches, schools, and practices.",
+      "examples": [
+        "Theravada",
+        "Mahayana",
+        "Tibetan"
+      ],
+      "topics": [
+        "1.1"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III.D.iii": {
+      "text": "Islam, Judaism, Christianity, and the core beliefs and practices of these religions continued to shape societies in Africa and Asia.",
+      "examples": [],
+      "topics": [
+        "1.2"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III.D.iv": {
+      "text": "Hinduism, Islam, and Buddhism, and their core beliefs and practices, continued to shape societies in South and Southeast Asia.",
+      "examples": [
+        "Bhakti movement",
+        "Sufism",
+        "Buddhist monasticism"
+      ],
+      "topics": [
+        "1.3"
+      ],
+      "custom": false
+    },
+    "KC-3.1.III.D.v": {
+      "text": "Christianity, Judaism, Islam, and the core beliefs and practices of these religions continued to shape societies in Europe.",
+      "examples": [],
+      "topics": [
+        "1.6"
+      ],
+      "custom": false
+    },
+    "KC-3.1.IV": {
+      "text": "There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes.",
+      "examples": [
+        "Bananas in Africa",
+        "New rice varieties in East Asia",
+        "Spread of citrus in the Mediterranean"
+      ],
+      "topics": [
+        "2.6"
+      ],
+      "custom": false
+    },
+    "KC-3.2": {
+      "text": "State formation and development demonstrated continuity, innovation, and diversity in various regions.",
+      "examples": [],
+      "topics": [
+        "1.7"
+      ],
+      "custom": false
+    },
+    "KC-3.2.I": {
+      "text": "As the Abbasid Caliphate fragmented, new Islamic political entities emerged, most of which were dominated by Turkic peoples. These states demonstrated continuity, innovation, and diversity.",
+      "examples": [
+        "Seljuk Empire",
+        "Mamluk sultanate of Egypt",
+        "Delhi sultanates"
+      ],
+      "topics": [
+        "1.2",
+        "1.7"
+      ],
+      "custom": false
+    },
+    "KC-3.2.I.A": {
+      "text": "Empires and states in Afro-Eurasia and the Americas demonstrated continuity, innovation, and diversity in the 13th century. This included the Song Dynasty of China, which utilized traditional methods of Confucianism and an imperial bureaucracy to maintain and justify its rule.",
+      "examples": [],
+      "topics": [
+        "1.1",
+        "1.7"
+      ],
+      "custom": false
+    },
+    "KC-3.2.I.B": {
+      "text": "Many states were destabilized, created, or replaced by other states.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.2.I.B.i": {
+      "text": "State formation and development demonstrated continuity, innovation, and diversity, including the new Hindu and Buddhist states that emerged in South and Southeast Asia.",
+      "examples": [
+        "Vijayanagara Empire",
+        "Srivijaya Empire",
+        "Rajput kingdoms",
+        "Khmer Empire",
+        "Majapahit",
+        "Sukhothai kingdom",
+        "Sinhala dynasties"
+      ],
+      "topics": [
+        "1.3",
+        "1.7"
+      ],
+      "custom": false
+    },
+    "KC-3.2.I.B.ii": {
+      "text": "Europe was politically fragmented and characterized by decentralized monarchies, feudalism, and the manorial system.",
+      "examples": [],
+      "topics": [
+        "1.6"
+      ],
+      "custom": false
+    },
+    "KC-3.2.I.B.iii": {
+      "text": "Empires collapsed in different regions of the world and in some areas were replaced by new imperial states, including the Mongol khanates.",
+      "examples": [],
+      "topics": [
+        "2.2"
+      ],
+      "custom": false
+    },
+    "KC-3.2.I.D": {
+      "text": "Across the globe, states expanded in scope and reach.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.2.I.D.i": {
+      "text": "In the Americas, as in Afro-Eurasia, state systems demonstrated continuity, innovation, and diversity, and expanded in scope and reach.",
+      "examples": [
+        "Maya city-states",
+        "Mexica",
+        "Inca",
+        "Chaco",
+        "Mesa Verde",
+        "Cahokia"
+      ],
+      "topics": [
+        "1.4",
+        "1.7"
+      ],
+      "custom": false
+    },
+    "KC-3.2.I.D.ii": {
+      "text": "In Africa, as in Eurasia and the Americas, state systems demonstrated continuity, innovation, and diversity, and expanded in scope and reach.",
+      "examples": [
+        "Great Zimbabwe",
+        "Ethiopia",
+        "Hausa kingdoms"
+      ],
+      "topics": [
+        "1.5",
+        "1.7"
+      ],
+      "custom": false
+    },
+    "KC-3.2.II": {
+      "text": "Interregional contacts continued and expanded.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.2.II.A": {
+      "text": "Interregional contacts encouraged cultural and intellectual transfers.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.2.II.A.i": {
+      "text": "Muslim states and empires encouraged significant intellectual innovations and transfers.",
+      "examples": [
+        "Advances in mathematics (Nasir al-Din al-Tusi)",
+        "Advances in literature ('A'ishah al-Ba'uniyyah)",
+        "Advances in medicine",
+        "Preservation and commentaries on Greek moral and natural philosophy",
+        "House of Wisdom in Abbasid Bagdad",
+        "Scholarly and cultural transfers in Muslim and Christian Spain"
+      ],
+      "topics": [
+        "1.2"
+      ],
+      "custom": false
+    },
+    "KC-3.2.II.A.ii": {
+      "text": "Interregional contacts and conflicts between states and empires, including the Mongols, encouraged significant technological and cultural transfers.",
+      "examples": [
+        "Transfer of Greco\u2013 Islamic medical knowledge to western Europe",
+        "Transfer of numbering systems to Europe",
+        "Adoption of Uyghur script"
+      ],
+      "topics": [
+        "2.2"
+      ],
+      "custom": false
+    },
+    "KC-3.2.II.A.iii": {
+      "text": "Interregional contacts and conflicts between states and empires encouraged significant technological and cultural transfers, including during Chinese maritime activity led by Ming Admiral Zheng He.",
+      "examples": [],
+      "topics": [
+        "2.3"
+      ],
+      "custom": false
+    },
+    "KC-3.3": {
+      "text": "Changes in trade networks resulted from and stimulated increasing productive capacity, with important implications for social and gender structures and environmental processes.",
+      "examples": [],
+      "topics": [
+        "2.7"
+      ],
+      "custom": false
+    },
+    "KC-3.3.I": {
+      "text": "The trade for luxury goods increased in Afro-Eurasia.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.3.I.B": {
+      "text": "Demand for luxury goods increased in Afro-Eurasia. Chinese, Persian, and Indian artisans and merchants expanded their production of textiles and porcelains for export; manufacture of iron and steel expanded in China.",
+      "examples": [],
+      "topics": [
+        "2.1",
+        "2.7"
+      ],
+      "custom": false
+    },
+    "KC-3.3.II": {
+      "text": "The fate of cities varied greatly, with periods of significant decline and periods of increased urbanization, buoyed by rising productivity and expanding trade networks.",
+      "examples": [],
+      "topics": [
+        "2.5"
+      ],
+      "custom": false
+    },
+    "KC-3.3.III": {
+      "text": "Song China and Europe had similar but different economic and social structures.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.3.III.A": {
+      "text": "Song China was largely an agricultural and commercialized society based on free labor.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-3.3.III.A.i": {
+      "text": "The economy of Song China became increasingly commercialized while continuing to depend on free peasant and artisanal labor.",
+      "examples": [],
+      "topics": [
+        "1.1"
+      ],
+      "custom": false
+    },
+    "KC-3.3.III.C": {
+      "text": "Europe was largely an agricultural society dependent on free and coerced labor, including serfdom.",
+      "examples": [],
+      "topics": [
+        "1.6"
+      ],
+      "custom": false
+    },
+    "KC-4.1": {
+      "text": "The interconnection of the Eastern and Western Hemispheres made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.",
+      "examples": [],
+      "topics": [
+        "3.4",
+        "4.8"
+      ],
+      "custom": false
+    },
+    "KC-4.1.II": {
+      "text": "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.",
+      "examples": [],
+      "topics": [
+        "4.1",
+        "4.8"
+      ],
+      "custom": false
+    },
+    "KC-4.1.II.A": {
+      "text": "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns\u2014all of which made transoceanic travel and trade possible.",
+      "examples": [
+        "Caravel",
+        "Carrack",
+        "Fluyt",
+        "Lateen sail",
+        "Compass",
+        "Astronomical charts"
+      ],
+      "topics": [
+        "4.1",
+        "4.8"
+      ],
+      "custom": false
+    },
+    "KC-4.1.III": {
+      "text": "New state-supported transoceanic maritime exploration occurred in this period.",
+      "examples": [],
+      "topics": [
+        "4.2"
+      ],
+      "custom": false
+    },
+    "KC-4.1.III.A": {
+      "text": "Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire.",
+      "examples": [],
+      "topics": [
+        "4.2"
+      ],
+      "custom": false
+    },
+    "KC-4.1.III.B": {
+      "text": "Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade.",
+      "examples": [],
+      "topics": [
+        "4.2"
+      ],
+      "custom": false
+    },
+    "KC-4.1.III.C": {
+      "text": "Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia.",
+      "examples": [],
+      "topics": [
+        "4.2"
+      ],
+      "custom": false
+    },
+    "KC-4.1.IV": {
+      "text": "The new global circulation of goods was facilitated by chartered European monopoly companies and the global flow of silver, especially from Spanish colonies in the Americas, which was used to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver. Regional markets continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants.",
+      "examples": [],
+      "topics": [
+        "4.5"
+      ],
+      "custom": false
+    },
+    "KC-4.1.IV.C": {
+      "text": "Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories. Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade.",
+      "examples": [],
+      "topics": [
+        "4.5"
+      ],
+      "custom": false
+    },
+    "KC-4.1.IV.D": {
+      "text": "The Atlantic trading system was a trading system between the Americas, Africa, and Europe.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-4.1.IV.D.i": {
+      "text": "The Atlantic trading system involved the movement of goods, wealth, and labor, including slaves.",
+      "examples": [],
+      "topics": [
+        "4.5"
+      ],
+      "custom": false
+    },
+    "KC-4.1.IV.D.ii": {
+      "text": "The Atlantic trading system involved the movement of labor\u2014including slaves\u2014and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.",
+      "examples": [],
+      "topics": [
+        "4.5"
+      ],
+      "custom": false
+    },
+    "KC-4.1.V": {
+      "text": "The new connections between the Eastern and Western Hemispheres resulted in the exchange of new plants, animals, and diseases, known as the Columbian Exchange.",
+      "examples": [],
+      "topics": [
+        "4.3"
+      ],
+      "custom": false
+    },
+    "KC-4.1.V.A": {
+      "text": "European colonization of the Americas led to the unintentional transfer of disease vectors, including mosquitoes and rats, and the spread of diseases that were endemic in the Eastern Hemisphere, including smallpox, measles, and malaria. Some of these diseases substantially reduced the indigenous populations, with catastrophic effects in many areas.",
+      "examples": [],
+      "topics": [
+        "4.3"
+      ],
+      "custom": false
+    },
+    "KC-4.1.V.B": {
+      "text": "American foods became staple crops in various parts of Europe, Asia, and Africa. Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East.",
+      "examples": [],
+      "topics": [
+        "4.3"
+      ],
+      "custom": false
+    },
+    "KC-4.1.V.C": {
+      "text": "Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African slaves.",
+      "examples": [
+        "Horses",
+        "Pigs",
+        "Cattle",
+        "Okra",
+        "Rice"
+      ],
+      "topics": [
+        "4.3"
+      ],
+      "custom": false
+    },
+    "KC-4.1.V.D": {
+      "text": "Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops.",
+      "examples": [],
+      "topics": [
+        "4.3"
+      ],
+      "custom": false
+    },
+    "KC-4.1.VI": {
+      "text": "In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.",
+      "examples": [],
+      "topics": [
+        "3.4",
+        "4.5"
+      ],
+      "custom": false
+    },
+    "KC-4.1.VI.i": {
+      "text": "The Protestant Reformation marked a break with existing Christian traditions and both the Protestant and Catholic reformations contributed to the growth of Christianity.",
+      "examples": [],
+      "topics": [
+        "3.3"
+      ],
+      "custom": false
+    },
+    "KC-4.1.VI.ii": {
+      "text": "Political rivalries between the Ottoman and Safavid empires intensified the split within Islam between Sunni and Shi\u2019a.",
+      "examples": [],
+      "topics": [
+        "3.3"
+      ],
+      "custom": false
+    },
+    "KC-4.1.VI.iii": {
+      "text": "Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.",
+      "examples": [],
+      "topics": [
+        "3.3"
+      ],
+      "custom": false
+    },
+    "KC-4.2": {
+      "text": "Although the world\u2019s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.",
+      "examples": [],
+      "topics": [
+        "4.8"
+      ],
+      "custom": false
+    },
+    "KC-4.2.II": {
+      "text": "The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified.",
+      "examples": [],
+      "topics": [
+        "4.8"
+      ],
+      "custom": false
+    },
+    "KC-4.2.II.A": {
+      "text": "Peasant and artisan labor continued and intensified in many regions as the demand for food and consumer goods increased.",
+      "examples": [
+        "Western Europe\u2014 wool and linen",
+        "India\u2014cotton",
+        "China\u2014silk"
+      ],
+      "topics": [
+        "4.5"
+      ],
+      "custom": false
+    },
+    "KC-4.2.II.B": {
+      "text": "Slavery in Africa continued in its traditional forms, including incorporation of slaves into households and the export of slaves to the Mediterranean and the Indian Ocean regions.",
+      "examples": [],
+      "topics": [
+        "4.4"
+      ],
+      "custom": false
+    },
+    "KC-4.2.II.C": {
+      "text": "The growth of the plantation economy increased the demand for slaves in the Americas, leading to significant demographic, social, and cultural changes.",
+      "examples": [],
+      "topics": [
+        "4.4"
+      ],
+      "custom": false
+    },
+    "KC-4.2.II.D": {
+      "text": "Newly developed colonial economies in the Americas largely depended on agriculture, utilized existing labor systems, including the Incan mit\u2019a, and introduced new labor systems including chattel slavery, indentured servitude, and encomienda and hacienda systems.",
+      "examples": [],
+      "topics": [
+        "4.4"
+      ],
+      "custom": false
+    },
+    "KC-4.2.III": {
+      "text": "Significant social changes in both elites and ordinary subjects occurred.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-4.2.III.A": {
+      "text": "Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.",
+      "examples": [],
+      "topics": [
+        "4.7"
+      ],
+      "custom": false
+    },
+    "KC-4.2.III.B": {
+      "text": "The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders.",
+      "examples": [
+        "Ottoman timars",
+        "Russian boyars",
+        "European nobility"
+      ],
+      "topics": [
+        "4.7"
+      ],
+      "custom": false
+    },
+    "KC-4.2.III.C": {
+      "text": "Some notable gender and family restructuring occurred, including demographic changes in Africa that resulted from the slave trades.",
+      "examples": [],
+      "topics": [
+        "4.5"
+      ],
+      "custom": false
+    },
+    "KC-4.3": {
+      "text": "Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.",
+      "examples": [],
+      "topics": [
+        "3.4",
+        "4.8"
+      ],
+      "custom": false
+    },
+    "KC-4.3.I": {
+      "text": "Rulers used many methods to consolidate their power.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-4.3.I.A": {
+      "text": "Rulers continued to use religious ideas, art, and monumental architecture to legitimize their rule.",
+      "examples": [
+        "Mexica practice of human sacrifice",
+        "European notions of divine right",
+        "Songhai promotion of Islam",
+        "Qing imperial portraits",
+        "Incan sun temple of Cuzco",
+        "Mughal mausolea and mosques",
+        "European palaces, such as Versailles"
+      ],
+      "topics": [
+        "3.2"
+      ],
+      "custom": false
+    },
+    "KC-4.3.I.B": {
+      "text": "Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups\u2019 roles in society, politics, or the economy.",
+      "examples": [
+        "Expulsion of Jews from Spain and Portugal; the acceptance of Jews in the Ottoman Empire",
+        "Restrictive policies against Han Chinese in Qing China",
+        "Varying status of different classes of women within the Ottoman Empire"
+      ],
+      "topics": [
+        "4.7"
+      ],
+      "custom": false
+    },
+    "KC-4.3.I.C": {
+      "text": "Recruitment and use of bureaucratic elites, as well as the development of military professionals, became more common among rulers who wanted to maintain centralized control over their populations and resources.",
+      "examples": [
+        "Ottoman devshirme",
+        "Salaried samurai"
+      ],
+      "topics": [
+        "3.2"
+      ],
+      "custom": false
+    },
+    "KC-4.3.I.D": {
+      "text": "Rulers used tribute collection, tax farming, and innovative tax-collection systems to generate revenue in order to forward state power and expansion.",
+      "examples": [
+        "Mughal zamindar tax collection",
+        "Ottoman tax farming",
+        "Mexica tribute lists",
+        "Ming practice of collecting taxes in hard currency"
+      ],
+      "topics": [
+        "3.2"
+      ],
+      "custom": false
+    },
+    "KC-4.3.II": {
+      "text": "Imperial expansion relied on the increased use of gunpowder, cannons, and armed trade to establish large empires in both hemispheres.",
+      "examples": [],
+      "topics": [
+        "3.1",
+        "3.4"
+      ],
+      "custom": false
+    },
+    "KC-4.3.II.A": {
+      "text": "Maritime trade networks were profitable for states involved.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-4.3.II.A.i": {
+      "text": "Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks. Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies.",
+      "examples": [
+        "Ming China",
+        "Tokugawa Japan"
+      ],
+      "topics": [
+        "4.4"
+      ],
+      "custom": false
+    },
+    "KC-4.3.II.A.ii": {
+      "text": "The expansion of maritime trading networks fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo, whose participation in trading networks led to an increase in their influence.",
+      "examples": [],
+      "topics": [
+        "4.4"
+      ],
+      "custom": false
+    },
+    "KC-4.3.II.A.iii": {
+      "text": "Despite some disruption and restructuring due to the arrival of Portuguese, Spanish, and Dutch merchants, existing trade networks in the Indian Ocean continued to flourish and included intra-Asian trade and Asian merchants.",
+      "examples": [
+        "Swahili Arabs",
+        "Omanis",
+        "Gujaratis",
+        "Javanese"
+      ],
+      "topics": [
+        "4.4"
+      ],
+      "custom": false
+    },
+    "KC-4.3.II.B": {
+      "text": "Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.",
+      "examples": [],
+      "topics": [
+        "3.1",
+        "3.4"
+      ],
+      "custom": false
+    },
+    "KC-4.3.II.C": {
+      "text": "Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British.",
+      "examples": [],
+      "topics": [
+        "4.4"
+      ],
+      "custom": false
+    },
+    "KC-4.3.III": {
+      "text": "The expansion of states caused conflicts in many ways.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-4.3.III.i": {
+      "text": "Political and religious disputes led to rivalries and conflict between states.",
+      "examples": [
+        "Safavid\u2013Mughal conflict",
+        "Songhai Empire\u2019s conflict with Morocco"
+      ],
+      "topics": [
+        "3.1",
+        "3.4"
+      ],
+      "custom": false
+    },
+    "KC-4.3.III.ii": {
+      "text": "Economic disputes led to rivalries and conflict between states.",
+      "examples": [
+        "Muslim\u2013European rivalry in the Indian Ocean",
+        "Moroccan conflict with the Songhai Empire"
+      ],
+      "topics": [
+        "4.5",
+        "4.8"
+      ],
+      "custom": false
+    },
+    "KC-4.3.III.iii": {
+      "text": "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level.",
+      "examples": [
+        "Pueblo Revolts",
+        "Fronde",
+        "Cossack revolts",
+        "Maratha conflict with Mughals",
+        "Ana Nzinga\u2019s resistance (as ruler of Ndongo and Matamba)",
+        "Metacom\u2019s War (King Philip\u2019s War)"
+      ],
+      "topics": [
+        "4.6"
+      ],
+      "custom": false
+    },
+    "KC-5.1": {
+      "text": "The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.",
+      "examples": [],
+      "topics": [
+        "5.7",
+        "5.10",
+        "6.8"
+      ],
+      "custom": false
+    },
+    "KC-5.1.I": {
+      "text": "The Industrial Revolution had a variety of factors and effects.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.1.I.A": {
+      "text": "A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including: \n - Proximity to waterways; access to rivers and canals \n - Geographical distribution of coal, iron, and timber \n - Urbanization \n - Improved agricultural productivity \n - Legal protection of private property \n - Access to foreign resources \n - Accumulation of capital",
+      "examples": [],
+      "topics": [
+        "5.3"
+      ],
+      "custom": false
+    },
+    "KC-5.1.I.B": {
+      "text": "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies.",
+      "examples": [],
+      "topics": [
+        "5.5"
+      ],
+      "custom": false
+    },
+    "KC-5.1.I.C": {
+      "text": "The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor.",
+      "examples": [],
+      "topics": [
+        "5.3"
+      ],
+      "custom": false
+    },
+    "KC-5.1.I.D": {
+      "text": "As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan.",
+      "examples": [],
+      "topics": [
+        "5.4"
+      ],
+      "custom": false
+    },
+    "KC-5.1.I.E": {
+      "text": "The \u201csecond industrial revolution\u201d led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century.",
+      "examples": [],
+      "topics": [
+        "5.5"
+      ],
+      "custom": false
+    },
+    "KC-5.1.II": {
+      "text": "Europe and the U.S. gradually became export economies, which was economically advantageous.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.1.II.A": {
+      "text": "The need for raw materials for factories and increased food supplies for the growing population in urban centers led to the growth of export economies around the world that specialized in commercial extraction of natural resources and the production of food and industrial crops. The profits from these raw materials were used to purchase finished goods.",
+      "examples": [
+        "Cotton production in Egypt",
+        "Rubber extraction in the Amazon and the Congo basin",
+        "The palm oil trade in West Africa",
+        "The guano industries in Peru and Chile",
+        "Meat from Argentina and Uruguay",
+        "Diamonds from Africa"
+      ],
+      "topics": [
+        "6.4"
+      ],
+      "custom": false
+    },
+    "KC-5.1.II.B": {
+      "text": "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions\u2019 share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions\u2019 share in global manufacturing declined.",
+      "examples": [
+        "Shipbuilding in India and Southeast Asia",
+        "Iron works in India",
+        "Textile production in India and Egypt"
+      ],
+      "topics": [
+        "5.4"
+      ],
+      "custom": false
+    },
+    "KC-5.1.II.C": {
+      "text": "Trade in some commodities was organized in a way that gave merchants and companies based in Europe and the U.S. a distinct economic advantage.",
+      "examples": [
+        "Opium produced in the Middle East or South Asia and exported to China",
+        "Cotton grown in South Asia and Egypt and exported to Great Britain and other European countries",
+        "Palm oil produced in sub-Saharan Africa and exported to European countries",
+        "Copper extracted in Chile"
+      ],
+      "topics": [
+        "6.5"
+      ],
+      "custom": false
+    },
+    "KC-5.1.III": {
+      "text": "New economic theories and practices caused global changes.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.1.III.A": {
+      "text": "Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith\u2019s theories of laissez-faire capitalism and free markets.",
+      "examples": [],
+      "topics": [
+        "5.7"
+      ],
+      "custom": false
+    },
+    "KC-5.1.III.B": {
+      "text": "The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance.",
+      "examples": [
+        "Hong Kong and Shanghai Banking Corporation (HSBC)",
+        "Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo",
+        "Stock markets",
+        "Limited-liability corporations"
+      ],
+      "topics": [
+        "5.7"
+      ],
+      "custom": false
+    },
+    "KC-5.1.IV": {
+      "text": "Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration.",
+      "examples": [],
+      "topics": [
+        "5.5",
+        "5.10"
+      ],
+      "custom": false
+    },
+    "KC-5.1.V": {
+      "text": "States and workers practiced reforms in reseponse to industrialization.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.1.V.A": {
+      "text": "In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers\u2019 movements and political parties emerged in different areas, promoting alternative visions of society.",
+      "examples": [],
+      "topics": [
+        "5.8"
+      ],
+      "custom": false
+    },
+    "KC-5.1.V.B": {
+      "text": "In response to the expansion of industrializing states, some governments in Asia and Africa, including the Ottoman Empire and Qing China, sought to reform and modernize their economies and militaries. Reform efforts were often resisted by some members of government or established elite groups.",
+      "examples": [],
+      "topics": [
+        "5.8"
+      ],
+      "custom": false
+    },
+    "KC-5.1.V.C": {
+      "text": "As the influence of the Industrial Revolution grew, a small number of states and governments promoted their own state-sponsored visions of industrialization.",
+      "examples": [
+        "Muhammad Ali\u2019s development of a cotton textile industry in Egypt"
+      ],
+      "topics": [
+        "5.6"
+      ],
+      "custom": false
+    },
+    "KC-5.1.V.D": {
+      "text": "In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms.",
+      "examples": [],
+      "topics": [
+        "5.8"
+      ],
+      "custom": false
+    },
+    "KC-5.1.VI": {
+      "text": "Urbanization and industrialization contributed to social, environmental, and economic changes.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.1.VI.A": {
+      "text": "New social classes, including the middle class and the industrial working class, developed.",
+      "examples": [],
+      "topics": [
+        "5.9"
+      ],
+      "custom": false
+    },
+    "KC-5.1.VI.B": {
+      "text": "While women and often children in working class families typically held wage-earning jobs to supplement their families\u2019 income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.",
+      "examples": [],
+      "topics": [
+        "5.9"
+      ],
+      "custom": false
+    },
+    "KC-5.1.VI.C": {
+      "text": "The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth.",
+      "examples": [],
+      "topics": [
+        "5.9"
+      ],
+      "custom": false
+    },
+    "KC-5.2": {
+      "text": "As states industrialized, they also expanded existing overseas empires and established new colonies and transoceanic relationships.",
+      "examples": [],
+      "topics": [
+        "6.8"
+      ],
+      "custom": false
+    },
+    "KC-5.2.I": {
+      "text": "Imperial states practiced different forms of imperialism, including direct rule, economic imperialism, and diplomacy.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.2.I.A": {
+      "text": "Some states with existing colonies strengthened their control over those colonies and in some cases assumed direct control over colonies previously held by non-state entities.",
+      "examples": [
+        "Shift from the private ownership of the Congo by King Leopold II to the Belgium government",
+        "Shift from the Dutch East India Company to Dutch government control in Indonesia and Southeast Asia"
+      ],
+      "topics": [
+        "6.2"
+      ],
+      "custom": false
+    },
+    "KC-5.2.I.B": {
+      "text": "European states as well as the United States and Japan acquired territories throughout Asia and the Pacific, while Spanish and Portuguese influence declined.",
+      "examples": [],
+      "topics": [
+        "6.2"
+      ],
+      "custom": false
+    },
+    "KC-5.2.I.C": {
+      "text": "Many European states used both warfare and diplomacy to expand their empires in Africa.",
+      "examples": [
+        "Britain in West Africa",
+        "Belgium in the Congo",
+        "French in West Africa"
+      ],
+      "topics": [
+        "6.2"
+      ],
+      "custom": false
+    },
+    "KC-5.2.I.D": {
+      "text": "Europeans established settler colonies in some parts of their empires.",
+      "examples": [
+        "New Zealand"
+      ],
+      "topics": [
+        "6.2"
+      ],
+      "custom": false
+    },
+    "KC-5.2.I.E": {
+      "text": "Industrialized states and businesses within those states practiced economic imperialism primarily in Asia and Latin America.",
+      "examples": [
+        "Britain and France expanding their influence in China through the Opium Wars",
+        "The construction of the Port of Buenos Aires with the support of British firms"
+      ],
+      "topics": [
+        "6.5"
+      ],
+      "custom": false
+    },
+    "KC-5.2.II": {
+      "text": "Despite anticolonial resistance, imperial powers held on to their colonies and self-strengthened.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.2.II.A": {
+      "text": "The expansion of U.S. and European influence in Asia led to internal reform in Japan that supported industrialization and led to the growing regional power of Japan in the Meiji Era.",
+      "examples": [],
+      "topics": [
+        "5.6"
+      ],
+      "custom": false
+    },
+    "KC-5.2.II.B": {
+      "text": "The United States, Russia, and Japan expanded their land holdings by conquering and settling neighboring territories.",
+      "examples": [],
+      "topics": [
+        "6.2"
+      ],
+      "custom": false
+    },
+    "KC-5.2.II.C": {
+      "text": "Anti-imperial resistance took various forms, including direct resistance within empires and the creation of new states on the peripheries.",
+      "examples": [
+        "T\u00fapac Amaru II\u2019s rebellion in Peru",
+        "Samory Tour\u00e9\u2019s military battles in West Africa",
+        "Yaa Asantewaa War in West Africa",
+        "1857 rebellion in India",
+        "Establishment of independent states in the Balkans",
+        "Sokoto Caliphate in modern-day Nigeria",
+        "Cherokee Nation",
+        "Zulu Kingdom"
+      ],
+      "topics": [
+        "6.3"
+      ],
+      "custom": false
+    },
+    "KC-5.2.III": {
+      "text": "A range of cultural, religious, and racial ideologies were used to justify imperialism, including Social Darwinism, nationalism, the concept of the civilizing mission, and the desire to religiously convert indigenous populations.",
+      "examples": [],
+      "topics": [
+        "6.1"
+      ],
+      "custom": false
+    },
+    "KC-5.3": {
+      "text": "The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.",
+      "examples": [],
+      "topics": [
+        "5.2",
+        "5.10",
+        "6.8"
+      ],
+      "custom": false
+    },
+    "KC-5.3.I": {
+      "text": "The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions and rebellions against existing governments.",
+      "examples": [],
+      "topics": [
+        "5.1",
+        "5.10"
+      ],
+      "custom": false
+    },
+    "KC-5.3.I.A": {
+      "text": "Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract.",
+      "examples": [],
+      "topics": [
+        "5.1",
+        "5.10"
+      ],
+      "custom": false
+    },
+    "KC-5.3.I.B": {
+      "text": "The ideas of Enlightenment philosophers, as reflected in revolutionary documents\u2014 including the American Declaration of Independence during the American Revolution, the French \u201cDeclaration of the Rights of Man and of the Citizen\u201d during the French Revolution, and Bol\u00edvar\u2019s \u201cLetter from Jamaica\u201d on the eve of the Latin American revolutions\u2014 influenced resistance to existing political authority, often in pursuit of independence and democratic ideals.",
+      "examples": [],
+      "topics": [
+        "5.2"
+      ],
+      "custom": false
+    },
+    "KC-5.3.I.C": {
+      "text": "Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in expanded suffrage, the abolition of slavery, and the end of serfdom.",
+      "examples": [],
+      "topics": [
+        "5.1"
+      ],
+      "custom": false
+    },
+    "KC-5.3.II": {
+      "text": "Nationalism challenged current social and political structures.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.3.II.i": {
+      "text": "Nationalism also became a major force shaping the historical development of states and empires.",
+      "examples": [],
+      "topics": [
+        "5.1",
+        "5.10"
+      ],
+      "custom": false
+    },
+    "KC-5.3.II.ii": {
+      "text": "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity.",
+      "examples": [],
+      "topics": [
+        "5.2"
+      ],
+      "custom": false
+    },
+    "KC-5.3.II.iii": {
+      "text": "Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions.",
+      "examples": [
+        "Propaganda Movement in the Philippines",
+        "Maori nationalism and the New Zealand wars in New Zealand",
+        "Puerto Rico\u2014writings of Lola Rodr\u00edguez de Ti\u00f3",
+        "German and Italian unifications",
+        "Balkan nationalisms",
+        "Ottomanism"
+      ],
+      "topics": [
+        "5.2"
+      ],
+      "custom": false
+    },
+    "KC-5.3.III": {
+      "text": "Democratic ideals and discontent with imperial rule contributed to anticolonial movements.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.3.III.B": {
+      "text": "Colonial subjects in the Americas led a series of rebellions inspired by democratic ideals. The American Revolution, and its successful establishment of a republic, the United States of America, was a model and inspiration for a number of the revolutions that followed. The American Revolution, the Haitian Revolution, and the Latin American independence movements facilitated the emergence of independent states in the Americas.",
+      "examples": [],
+      "topics": [
+        "5.2"
+      ],
+      "custom": false
+    },
+    "KC-5.3.III.C": {
+      "text": "Slave resistance challenged existing authorities in the Americas.",
+      "examples": [
+        "The establishment of Maroon societies in the Caribbean and Brazil",
+        "North American slave resistance"
+      ],
+      "topics": [
+        "4.6"
+      ],
+      "custom": false
+    },
+    "KC-5.3.III.D": {
+      "text": "Increasing questions about political authority and growing nationalism contributed to anticolonial movements.",
+      "examples": [],
+      "topics": [
+        "6.3"
+      ],
+      "custom": false
+    },
+    "KC-5.3.III.E": {
+      "text": "Increasing discontent with imperial rule led to rebellions, some of which were influenced by religious ideas.",
+      "examples": [
+        "Ghost Dance in the U.S.",
+        "Xhosa Cattle-Killing Movement in Southern Africa",
+        "Mahdist wars in Sudan"
+      ],
+      "topics": [
+        "6.3"
+      ],
+      "custom": false
+    },
+    "KC-5.3.IV": {
+      "text": "The Enlightenment caused people to rethink the current social structure.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.3.IV.A": {
+      "text": "Discontent with social structures encouraged new ideologies to emerge.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.3.IV.A.i": {
+      "text": "Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism.",
+      "examples": [],
+      "topics": [
+        "5.2"
+      ],
+      "custom": false
+    },
+    "KC-5.3.IV.A.ii": {
+      "text": "Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism.",
+      "examples": [],
+      "topics": [
+        "5.8"
+      ],
+      "custom": false
+    },
+    "KC-5.3.IV.B": {
+      "text": "Demands for women\u2019s suffrage and an emergent feminism challenged political and gender hierarchies.",
+      "examples": [
+        "Mary Wollstonecraft\u2019s A Vindication of the Rights of Woman",
+        "Olympe de Gouges\u2019s Declaration of the Rights of Woman and of the Female Citizen",
+        "Seneca Falls Conference (1848) organized by Elizabeth Cady Stanton and Lucretia Mott"
+      ],
+      "topics": [
+        "5.1"
+      ],
+      "custom": false
+    },
+    "KC-5.4": {
+      "text": "As a result of the emergence of transoceanic empires and a global capitalist economy, migration patterns changed dramatically, and the numbers of migrants increased significantly.",
+      "examples": [],
+      "topics": [
+        "6.8"
+      ],
+      "custom": false
+    },
+    "KC-5.4.I": {
+      "text": "Migration in many cases was influenced by changes in demographics in both industrialized and unindustrialized societies that presented challenges to existing patterns of living.",
+      "examples": [],
+      "topics": [
+        "6.6"
+      ],
+      "custom": false
+    },
+    "KC-5.4.I.B": {
+      "text": "Because of the nature of new modes of transportation, both internal and external migrants increasingly relocated to cities. This pattern contributed to the significant global urbanization of the 19th century. The new methods of transportation also allowed for many migrants to return, periodically or permanently, to their home societies.",
+      "examples": [
+        "Japanese agricultural workers in the Pacific",
+        "Lebanese merchants in the Americas",
+        "Italian industrial workers in Argentina"
+      ],
+      "topics": [
+        "6.6"
+      ],
+      "custom": false
+    },
+    "KC-5.4.II": {
+      "text": "Migration included both free laborers and coerced and semicoerced labor.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.4.II.A": {
+      "text": "Many individuals chose freely to relocate, often in search of work.",
+      "examples": [
+        "Irish to the United States",
+        "British engineers and geologists to South Asia and Africa"
+      ],
+      "topics": [
+        "6.6"
+      ],
+      "custom": false
+    },
+    "KC-5.4.II.B": {
+      "text": "The new global capitalist economy continued to rely on coerced and semicoerced labor migration, including slavery, Chinese and Indian indentured servitude, and convict labor.",
+      "examples": [],
+      "topics": [
+        "6.6"
+      ],
+      "custom": false
+    },
+    "KC-5.4.III": {
+      "text": "Migration often led to the change of social structures in both sending and receiving societies.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-5.4.III.A": {
+      "text": "Migrants tended to be male, leaving women to take on new roles in the home society that had been formerly occupied by men.",
+      "examples": [],
+      "topics": [
+        "6.7"
+      ],
+      "custom": false
+    },
+    "KC-5.4.III.B": {
+      "text": "Migrants often created ethnic enclaves in different parts of the world that helped transplant their culture into new environments.",
+      "examples": [
+        "Chinese in Southeast Asia, the Caribbean, South America, and North America",
+        "Indians in East and Southern Africa, the Caribbean, and Southeast Asia",
+        "Irish in North America",
+        "Italians in North and South America"
+      ],
+      "topics": [
+        "6.7"
+      ],
+      "custom": false
+    },
+    "KC-5.4.III.C": {
+      "text": "Receiving societies did not always embrace immigrants, as seen in the various degrees of ethnic and racial prejudice and the ways states attempted to regulate the increased flow of people across their borders.",
+      "examples": [
+        "Chinese Exclusion Act",
+        "White Australia policy"
+      ],
+      "topics": [
+        "6.7"
+      ],
+      "custom": false
+    },
+    "KC-6.1": {
+      "text": "Rapid advances in science and technology altered the understanding of the universe and the natural world and led to advances in communication, transportation, industry, agriculture, and medicine.",
+      "examples": [],
+      "topics": [
+        "7.9",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.1.I": {
+      "text": "Advancements in technology created numerous benefits on human standards of living.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.1.I.A": {
+      "text": "New modes of communication\u2014 including radio communication, cellular communication, and the internet\u2014as well as transportation, including air travel and shipping containers, reduced the problem of geographic distance.",
+      "examples": [],
+      "topics": [
+        "9.1",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.1.I.B": {
+      "text": "The Green Revolution and commercial agriculture increased productivity and sustained the earth\u2019s growing population as it spread chemically and genetically modified forms of agriculture.",
+      "examples": [],
+      "topics": [
+        "9.1",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.1.I.C": {
+      "text": "Medical innovations, including vaccines and antibiotics, increased the ability of humans to survive and live longer lives.",
+      "examples": [],
+      "topics": [
+        "9.1",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.1.I.D": {
+      "text": "Energy technologies, including the use of petroleum and nuclear power, raised productivity and increased the production of material goods.",
+      "examples": [],
+      "topics": [
+        "9.1",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.1.II": {
+      "text": "Human activity contributed to climate change, which had negative impacts on the environment and human lives.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.1.II.A": {
+      "text": "As human activity contributed to deforestation, desertification, a decline in air quality, and increased consumption of the world\u2019s supply of fresh water, humans competed over these and other resources more intensely than ever before.",
+      "examples": [],
+      "topics": [
+        "9.3"
+      ],
+      "custom": false
+    },
+    "KC-6.1.II.B": {
+      "text": "The release of greenhouse gases and pollutants into the atmosphere contributed to debates about the nature and causes of climate change.",
+      "examples": [],
+      "topics": [
+        "9.3"
+      ],
+      "custom": false
+    },
+    "KC-6.1.III": {
+      "text": "Diseases, as well as medical and scientific developments, had significant effects on populations around the world.",
+      "examples": [
+        "Malaria",
+        "Tuberculosis",
+        "Cholera"
+      ],
+      "topics": [
+        "9.2"
+      ],
+      "custom": false
+    },
+    "KC-6.1.III.A": {
+      "text": "Diseases associated with poverty persisted while other diseases emerged as new epidemics and threats to human populations, in some cases leading to social disruption. These outbreaks spurred technological and medical advances. Some diseases occurred at higher incidence merely because of increased longevity.",
+      "examples": [
+        "Emergent epidemic diseases:",
+        "1918 influenza pandemic",
+        "Ebola",
+        "HIV/AIDS",
+        "Diseases associated with increased longevity:",
+        "Heart disease",
+        "Alzheimer\u2019s disease"
+      ],
+      "topics": [
+        "9.2"
+      ],
+      "custom": false
+    },
+    "KC-6.1.III.B": {
+      "text": "More effective forms of birth control gave women greater control over fertility, transformed reproductive practices, and contributed to declining rates of fertility in much of the world.",
+      "examples": [],
+      "topics": [
+        "9.1",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.1.III.C": {
+      "text": "Military technology and tactics contributed to the increase in wartime casualties.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.1.III.C.i": {
+      "text": "New military technology led to increased levels of wartime casualties.",
+      "examples": [],
+      "topics": [
+        "7.3"
+      ],
+      "custom": false
+    },
+    "KC-6.1.III.C.ii": {
+      "text": "New military technology and new tactics, including the atomic bomb, fire-bombing, and the waging of \u201ctotal war\u201d led to increased levels of wartime casualties.",
+      "examples": [],
+      "topics": [
+        "7.7"
+      ],
+      "custom": false
+    },
+    "KC-6.2": {
+      "text": "Peoples and states around the world challenged the existing political and social order in varying ways, leading to unprecedented worldwide conflicts.",
+      "examples": [],
+      "topics": [
+        "7.9",
+        "8.9"
+      ],
+      "custom": false
+    },
+    "KC-6.2.I": {
+      "text": "The West dominated the global political order at the beginning of the 20th century, but both land-based and maritime empires gave way to new states by the century\u2019s end.",
+      "examples": [],
+      "topics": [
+        "7.1",
+        "7.9"
+      ],
+      "custom": false
+    },
+    "KC-6.2.I.A": {
+      "text": "The older, land-based Ottoman, Russian, and Qing empires collapsed due to a combination of internal and external factors. These changes in Russia eventually led to communist revolution.",
+      "examples": [],
+      "topics": [
+        "7.1",
+        "7.9"
+      ],
+      "custom": false
+    },
+    "KC-6.2.I.B": {
+      "text": "Between the two world wars, Western and Japanese imperial states predominantly maintained control over colonial holdings; in some cases, they gained additional territories through conquest or treaty settlement and in other cases faced anti-imperial resistance.",
+      "examples": [
+        "Transfer of former German colonies to Great Britain and France under the system of League of Nations mandates",
+        "Manchukuo/Greater East Asia Co-Prosperity Sphere",
+        "Indian National Congress",
+        "West African resistance (strikes/congresses) to French rule"
+      ],
+      "topics": [
+        "7.5"
+      ],
+      "custom": false
+    },
+    "KC-6.2.I.C": {
+      "text": "After the end of World War II, some colonies negotiated their independence, while others achieved independence through armed struggle.",
+      "examples": [
+        "Negotiated independence:",
+        "India from the British Empire",
+        "The Gold Coast from the British Empire",
+        "French West Africa",
+        "Independence through armed struggle:",
+        "Algeria from the French empire",
+        "Angola from the Portuguese empire",
+        "Vietnam from the French empire"
+      ],
+      "topics": [
+        "8.5"
+      ],
+      "custom": false
+    },
+    "KC-6.2.I.i": {
+      "text": "As a result of internal tension and Japanese aggression, Chinese communists seized power. These changes in China eventually led to communist revolution.",
+      "examples": [],
+      "topics": [
+        "8.4"
+      ],
+      "custom": false
+    },
+    "KC-6.2.II": {
+      "text": "Hopes for greater self-government were largely unfulfilled following World War I; however, in the years following World War II, increasing anti-imperialist sentiment contributed to the dissolution of empires and the restructuring of states.",
+      "examples": [],
+      "topics": [
+        "8.1",
+        "8.9"
+      ],
+      "custom": false
+    },
+    "KC-6.2.II.A": {
+      "text": "Nationalist leaders and parties in Asia and Africa sought varying degrees of autonomy within or independence from imperial rule.",
+      "examples": [
+        "Indian National Congress",
+        "Ho Chi Minh in French Indochina (Vietnam)",
+        "Kwame Nkrumah in British Gold Coast (Ghana)",
+        "Gamal Abdel Nasser in Egypt"
+      ],
+      "topics": [
+        "8.5"
+      ],
+      "custom": false
+    },
+    "KC-6.2.II.B": {
+      "text": "Regional, religious, and ethnic movements challenged colonial rule and inherited imperial boundaries. Some of these movements advocated for autonomy.",
+      "examples": [
+        "Muslim League in British India",
+        "Qu\u00e9b\u00e9cois separatist movement in Canada",
+        "Biafra secessionist movement in Nigeria"
+      ],
+      "topics": [
+        "8.5"
+      ],
+      "custom": false
+    },
+    "KC-6.2.II.D": {
+      "text": "States around the world challenged the existing political and social order, including the Mexican Revolution that arose as a result of political crisis.",
+      "examples": [],
+      "topics": [
+        "7.1",
+        "7.9"
+      ],
+      "custom": false
+    },
+    "KC-6.2.II.D.i": {
+      "text": "Movements to redistribute land and resources developed within states in Africa, Asia, and Latin America, sometimes advocating communism or socialism.",
+      "examples": [
+        "Communist Revolution for Vietnamese independence",
+        "Mengistu Haile Mariam in Ethiopia",
+        "Land reform in Kerala and other states within India",
+        "White Revolution in Iran"
+      ],
+      "topics": [
+        "8.4"
+      ],
+      "custom": false
+    },
+    "KC-6.2.III": {
+      "text": "The weakening of imperial powers contributed to the abandonment of colonies and the rise of extremist groups.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.2.III.A": {
+      "text": "After empires gave up their colonies, the colonies redrew national boundaries, which caused conflicts and the creation of new states.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.2.III.A.i": {
+      "text": "The redrawing of political boundaries after the withdrawal of former colonial authorities led to the creation of new states.",
+      "examples": [
+        "Israel",
+        "Cambodia",
+        "Pakistan"
+      ],
+      "topics": [
+        "8.6"
+      ],
+      "custom": false
+    },
+    "KC-6.2.III.A.ii": {
+      "text": "The redrawing of political boundaries in some cases led to conflict as well as population displacement and/or resettlements, including those related to the Partition of India and the creation of the state of Israel.",
+      "examples": [],
+      "topics": [
+        "8.6"
+      ],
+      "custom": false
+    },
+    "KC-6.2.III.B": {
+      "text": "The migration of former colonial subjects to imperial metropoles (the former colonizing country), usually in the major cities, maintained cultural and economic ties between the colony and the metropole even after the dissolution of empires.",
+      "examples": [
+        "South Asians to Britain",
+        "Algerians to France",
+        "Filipinos to the United States"
+      ],
+      "topics": [
+        "8.6"
+      ],
+      "custom": false
+    },
+    "KC-6.2.III.C": {
+      "text": "The rise of extremist groups in power led to the attempted destruction of specific populations, notably the Nazi killing of the Jews in the Holocaust during World War II, and to other atrocities, acts of genocide, or ethnic violence.",
+      "examples": [
+        "Armenians in the Ottoman Empire during and after World War I",
+        "Cambodia during the late 1970s",
+        "Tutsi in Rwanda in the 1990s",
+        "Ukraine in the Soviet Union in the 1920s and 1930s"
+      ],
+      "topics": [
+        "7.8"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV": {
+      "text": "World War I, World War II, and the Cold War were impactful conflicts in the twentieth century.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.2.IV.A": {
+      "text": "World Wars I and II were two total wars in which governments encouraged all population to contribute to the war.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.2.IV.A.i": {
+      "text": "World War I was the first total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies) for the purpose of waging war.",
+      "examples": [],
+      "topics": [
+        "7.3"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV.A.ii": {
+      "text": "World War II was a total war. Governments used a variety of strategies, including political propaganda, art, media, and intensified forms of nationalism, to mobilize populations (both in the home countries and the colonies or former colonies) for the purpose of waging war. Governments used ideologies, including fascism and communism to mobilize all of their state\u2019s resources for war and, in the case of totalitarian states, to repress basic freedoms and dominate many aspects of daily life during the course of the conflicts and beyond.",
+      "examples": [
+        "Great Britain under Winston Churchill",
+        "United States under Franklin Roosevelt",
+        "Germany under Adolf Hitler",
+        "USSR under Joseph Stalin"
+      ],
+      "topics": [
+        "7.7"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV.B": {
+      "text": "Multiple factors caused the First and Second World Wars.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.2.IV.B.i": {
+      "text": "The causes of World War I included imperialist expansion and competition for resources. In addition, territorial and regional conflicts combined with a flawed alliance system and intense nationalism to escalate the tensions into global conflict.",
+      "examples": [],
+      "topics": [
+        "7.2"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV.B.ii": {
+      "text": "The causes of World War II included the unsustainable peace settlement after World War I, the global economic crisis engendered by the Great Depression, continued imperialist aspirations, and especially the rise to power of fascist and totalitarian regimes that resulted in the aggressive militarism of Nazi Germany under Adolf Hitler.",
+      "examples": [],
+      "topics": [
+        "7.6"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV.C": {
+      "text": "The Cold War conflict extended beyond its basic ideological origins to have profound effects on economic, political, social, and cultural aspects of global events.",
+      "examples": [],
+      "topics": [
+        "8.9"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV.C.i": {
+      "text": "Technological and economic gains experienced during World War II by the victorious nations shifted the global balance of power.",
+      "examples": [],
+      "topics": [
+        "8.1"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV.C.ii": {
+      "text": "The global balance of economic and political power shifted during and after World War II and rapidly evolved into the Cold War. The democracy of the United States and the authoritarian communist Soviet Union emerged as superpowers, which led to ideological conflict and a power struggle between capitalism and communism across the globe.",
+      "examples": [],
+      "topics": [
+        "8.2"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV.D": {
+      "text": "The Cold War produced new military alliances, including NATO and the Warsaw Pact, and led to nuclear proliferation and proxy wars between and within postcolonial states in Latin America, Africa, and Asia.",
+      "examples": [],
+      "topics": [
+        "8.3"
+      ],
+      "custom": false
+    },
+    "KC-6.2.IV.E": {
+      "text": "Advances in U.S. military and technological development, the Soviet Union\u2019s costly and ultimately failed invasion of Afghanistan, and public discontent and economic weakness in communist countries led to the end of the Cold War and the collapse of the Soviet Union.",
+      "examples": [],
+      "topics": [
+        "8.8"
+      ],
+      "custom": false
+    },
+    "KC-6.2.V": {
+      "text": "Although conflict dominated much of the 20th century, many individuals and groups\u2014 including states\u2014opposed this trend. Some individuals and groups, however, intensified the conflicts.",
+      "examples": [],
+      "topics": [
+        "8.7"
+      ],
+      "custom": false
+    },
+    "KC-6.2.V.A": {
+      "text": "Groups and individuals challenged the many wars of the century, and some, such as Mohandas Gandhi, Martin Luther King Jr., and Nelson Mandela, promoted the practice of nonviolence as a way to bring about political change.",
+      "examples": [],
+      "topics": [
+        "8.7"
+      ],
+      "custom": false
+    },
+    "KC-6.2.V.B": {
+      "text": "Groups and individuals, including the Non-Aligned Movement, opposed and promoted alternatives to the existing economic, political, and social orders.",
+      "examples": [
+        "Sukarno in Indonesia",
+        "Kwame Nkrumah in Ghana"
+      ],
+      "topics": [
+        "8.2"
+      ],
+      "custom": false
+    },
+    "KC-6.2.V.C": {
+      "text": "Militaries and militarized states often responded to the proliferation of conflicts in ways that further intensified conflict.",
+      "examples": [
+        "Chile under Augusto Pinochet",
+        "Spain under Francisco Franco",
+        "Uganda under Idi Amin",
+        "The buildup of the military\u2013industrial complex and weapons trading"
+      ],
+      "topics": [
+        "8.7"
+      ],
+      "custom": false
+    },
+    "KC-6.2.V.D": {
+      "text": "Some movements used violence against civilians in an effort to achieve political aims.",
+      "examples": [
+        "Shining Path",
+        "Al-Qaeda"
+      ],
+      "topics": [
+        "8.7"
+      ],
+      "custom": false
+    },
+    "KC-6.3": {
+      "text": "The role of the state in the domestic economy varied, and new institutions of global association emerged and continued to develop throughout the century.",
+      "examples": [],
+      "topics": [
+        "8.9"
+      ],
+      "custom": false
+    },
+    "KC-6.3.I": {
+      "text": "States responded in a variety of ways to the economic challenges of the 20th century.",
+      "examples": [],
+      "topics": [
+        "8.9",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.3.I.A": {
+      "text": "Communist states created economic polocies often with negative repercussions for the population.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.3.I.A.i": {
+      "text": "In the Soviet Union, the government controlled the national economy through the Five Year Plans, often implementing repressive policies, with negative repercussions for the population.",
+      "examples": [],
+      "topics": [
+        "7.4"
+      ],
+      "custom": false
+    },
+    "KC-6.3.I.A.ii": {
+      "text": "In communist China, the government controlled the national economy through the Great Leap Forward, often implementing repressive policies, with negative repercussions for the population.",
+      "examples": [],
+      "topics": [
+        "8.4"
+      ],
+      "custom": false
+    },
+    "KC-6.3.I.B": {
+      "text": "Following World War I and the onset of the Great Depression, governments began to take a more active role in economic life.",
+      "examples": [
+        "The New Deal",
+        "The fascist corporatist economy",
+        "Governments with strong popular support in Brazil and Mexico"
+      ],
+      "topics": [
+        "7.4"
+      ],
+      "custom": false
+    },
+    "KC-6.3.I.C": {
+      "text": "In newly independent states after World War II, governments often took on a strong role in guiding economic life to promote development.",
+      "examples": [
+        "Gamal Abdel Nasser\u2019s promotion of economic development in Egypt",
+        "Indira Ghandi\u2019s economic policies in India",
+        "Julius Nyerere\u2019s modernization in Tanzania",
+        "Sirimavo Bandaranaike\u2019s economic policies in Sri Lanka"
+      ],
+      "topics": [
+        "8.6"
+      ],
+      "custom": false
+    },
+    "KC-6.3.I.D": {
+      "text": "In a trend accelerated by the end of the Cold War, many governments encouraged free-market economic policies and promoted economic liberalization in the late 20th century.",
+      "examples": [
+        "The United States under Ronald Reagan",
+        "Britain under Margaret Thatcher",
+        "China under Deng Xiaoping",
+        "Chile under Augusto Pinochet"
+      ],
+      "topics": [
+        "9.4"
+      ],
+      "custom": false
+    },
+    "KC-6.3.I.E": {
+      "text": "In the late 20th century, revolutions in information and communications technology led to the growth of knowledge economies in some regions, while industrial production and manufacturing were increasingly situated in Asia and Latin America.",
+      "examples": [
+        "Knowledge economies:",
+        "Finland",
+        "Japan",
+        "U.S.",
+        "Asian production and manufacturing economies:",
+        "Vietnam",
+        "Bangladesh",
+        "Latin American production and manufacturing economies:",
+        "Mexico",
+        "Honduras"
+      ],
+      "topics": [
+        "9.4"
+      ],
+      "custom": false
+    },
+    "KC-6.3.II": {
+      "text": "Globalization created organizations and corporations, which were considered unequal by some.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.3.II.A": {
+      "text": "New international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation.",
+      "examples": [],
+      "topics": [
+        "9.8"
+      ],
+      "custom": false
+    },
+    "KC-6.3.II.B": {
+      "text": "Changing economic institutions, multinational corporations, and regional trade agreements reflected the spread of principles and practices associated with free-market economics throughout the world.",
+      "examples": [
+        "Economic institutions and regional trade agreements:",
+        "World Trade Organization (WTO)",
+        "North American Free Trade Agreement (NAFTA)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Multinational corporations:",
+        "Nestl\u00e9",
+        "Nissan",
+        "Mahindra and Mahindra"
+      ],
+      "topics": [
+        "9.4"
+      ],
+      "custom": false
+    },
+    "KC-6.3.II.C": {
+      "text": "Movements throughout the world protested the inequality of the environmental and economic consequences of global integration.",
+      "examples": [
+        "Greenpeace",
+        "Professor Wangari Maathai\u2019s Green Belt Movement in Kenya",
+        "World Fair Trade Organization"
+      ],
+      "topics": [
+        "9.5"
+      ],
+      "custom": false
+    },
+    "KC-6.3.III": {
+      "text": "Discrimination based on race, class, gender, and religion decreased.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.3.III.i": {
+      "text": "Rights-based discourses challenged old assumptions about race, class, gender, and religion.",
+      "examples": [
+        "The U.N. Universal Declaration of Human Rights, especially as it sought to protect the rights of children, women, and refugees",
+        "Global feminism movements",
+        "Negritude movement",
+        "Liberation theology in Latin America"
+      ],
+      "topics": [
+        "9.5",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.3.III.ii": {
+      "text": "In much of the world, access to education as well as participation in new political and professional roles became more inclusive in terms of race, class, gender, and religion.",
+      "examples": [
+        "The right to vote and/ or to hold public office granted to women in the United States (1920), Brazil (1932), Turkey (1934), Japan (1945), India (1947), and Morocco (1963)",
+        "The rising rate of female literacy and the increasing numbers of women in higher education, in most parts of the world",
+        "The U.S. Civil Rights Act of 1965",
+        "The end of apartheid",
+        "Caste reservation in India"
+      ],
+      "topics": [
+        "9.5",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.3.IV": {
+      "text": "In the second half of the century, culture became increasingly globalized.",
+      "examples": [],
+      "topics": [],
+      "custom": true
+    },
+    "KC-6.3.IV.i": {
+      "text": "Political and social changes of the 20th century led to changes in the arts and in the second half of the century, popular and consumer culture became more global.",
+      "examples": [],
+      "topics": [
+        "9.6",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.3.IV.ii": {
+      "text": "Arts, entertainment, and popular culture increasingly reflected the influence of a globalized society.",
+      "examples": [
+        "Music: Reggae",
+        "Movies: Bollywood",
+        "Social media: Facebook, Twitter",
+        "Television: BBC",
+        "Sports: World Cup soccer, the Olympics"
+      ],
+      "topics": [
+        "9.6",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.3.IV.iii": {
+      "text": "Consumer culture became globalized and transcended national borders.",
+      "examples": [
+        "Online commerce: Alibaba, eBay",
+        "Global brands: Toyota, Coca-Cola"
+      ],
+      "topics": [
+        "9.6",
+        "9.9"
+      ],
+      "custom": false
+    },
+    "KC-6.3.IV.iv": {
+      "text": "Responses to rising cultural and economic globalization took a variety of forms.",
+      "examples": [
+        "Anti-IMF and anti-World Bank activism",
+        "Advent of locally developed social media (Weibo in China)"
+      ],
+      "topics": [
+        "9.7"
+      ],
+      "custom": false
+    }
+  },
+  "topics": {
+    "1.1": {
+      "name": "Developments in East Asia from c. 1200 to c. 1450",
+      "concepts": [
+        "KC-3.1.I.D",
+        "KC-3.1.III.D.i",
+        "KC-3.1.III.D.ii",
+        "KC-3.2.I.A",
+        "KC-3.3.III.A.i"
+      ]
+    },
+    "1.2": {
+      "name": "Developments in Dar al-Islam from c. 1200 to c. 1450",
+      "concepts": [
+        "KC-3.1.III.A",
+        "KC-3.1.III.D.iii",
+        "KC-3.2.I",
+        "KC-3.2.II.A.i"
+      ]
+    },
+    "1.3": {
+      "name": "Developments in South and Southeast Asia from c. 1200 to c. 1450",
+      "concepts": [
+        "KC-3.1.III.D.iv",
+        "KC-3.2.I.B.i"
+      ]
+    },
+    "1.4": {
+      "name": "State Building in the Americas",
+      "concepts": [
+        "KC-3.2.I.D.i"
+      ]
+    },
+    "1.5": {
+      "name": "State Building in Africa",
+      "concepts": [
+        "KC-3.2.I.D.ii"
+      ]
+    },
+    "1.6": {
+      "name": "Developments in Europe from c. 1200 to c. 1450",
+      "concepts": [
+        "KC-3.1.III.D.v",
+        "KC-3.2.I.B.ii",
+        "KC-3.3.III.C"
+      ]
+    },
+    "1.7": {
+      "name": "Comparison in the Period from c. 1200 to c. 1450",
+      "concepts": [
+        "KC-3.2",
+        "KC-3.2.I",
+        "KC-3.2.I.A",
+        "KC-3.2.I.B.i",
+        "KC-3.2.I.D.i",
+        "KC-3.2.I.D.ii"
+      ]
+    },
+    "2.1": {
+      "name": "The Silk Roads",
+      "concepts": [
+        "KC-3.1.I.A.i",
+        "KC-3.1.I.C.i",
+        "KC-3.3.I.B"
+      ]
+    },
+    "2.2": {
+      "name": "The Mongol Empire and the Making of the Modern World",
+      "concepts": [
+        "KC-3.1.I.E.i",
+        "KC-3.1.II.A.i",
+        "KC-3.2.I.B.iii",
+        "KC-3.2.II.A.ii"
+      ]
+    },
+    "2.3": {
+      "name": "Exchange in the Indian Ocean",
+      "concepts": [
+        "KC-3.1.I.A.ii",
+        "KC-3.1.I.A.iii",
+        "KC-3.1.I.C.ii",
+        "KC-3.1.III.B",
+        "KC-3.2.II.A.iii"
+      ]
+    },
+    "2.4": {
+      "name": "Trans-Saharan Trade Routes",
+      "concepts": [
+        "KC-3.1.I.A.iv",
+        "KC-3.1.I.E.ii",
+        "KC-3.1.II.A.ii"
+      ]
+    },
+    "2.5": {
+      "name": "Cultural Consequences of Connectivity",
+      "concepts": [
+        "KC-3.1.III.C",
+        "KC-3.1.III.D",
+        "KC-3.3.II"
+      ]
+    },
+    "2.6": {
+      "name": "Environmental Consequences of Connectivity",
+      "concepts": [
+        "KC-3.1.IV"
+      ]
+    },
+    "2.7": {
+      "name": "Comparison of Economic Exchange",
+      "concepts": [
+        "KC-3.1",
+        "KC-3.1.I.A.i",
+        "KC-3.1.I.C.i",
+        "KC-3.3",
+        "KC-3.3.I.B"
+      ]
+    },
+    "3.1": {
+      "name": "Empires Expand",
+      "concepts": [
+        "KC-4.3.II",
+        "KC-4.3.II.B",
+        "KC-4.3.III.i"
+      ]
+    },
+    "3.2": {
+      "name": "Empires - Administration",
+      "concepts": [
+        "KC-4.3.I.A",
+        "KC-4.3.I.C",
+        "KC-4.3.I.D"
+      ]
+    },
+    "3.3": {
+      "name": "Empires - Belief Systems",
+      "concepts": [
+        "KC-4.1.VI.i",
+        "KC-4.1.VI.ii",
+        "KC-4.1.VI.iii"
+      ]
+    },
+    "3.4": {
+      "name": "Comparison in Land-Based Empires",
+      "concepts": [
+        "KC-4.1",
+        "KC-4.1.VI",
+        "KC-4.3",
+        "KC-4.3.II",
+        "KC-4.3.II.B",
+        "KC-4.3.III.i"
+      ]
+    },
+    "4.1": {
+      "name": "Technological Innovations from 1450 to 1750",
+      "concepts": [
+        "KC-4.1.II",
+        "KC-4.1.II.A"
+      ]
+    },
+    "4.2": {
+      "name": "Exploration - Causes and Events from 1450 to 1750",
+      "concepts": [
+        "KC-4.1.III",
+        "KC-4.1.III.A",
+        "KC-4.1.III.B",
+        "KC-4.1.III.C"
+      ]
+    },
+    "4.3": {
+      "name": "Columbian Exchange",
+      "concepts": [
+        "KC-4.1.V",
+        "KC-4.1.V.A",
+        "KC-4.1.V.B",
+        "KC-4.1.V.C",
+        "KC-4.1.V.D"
+      ]
+    },
+    "4.4": {
+      "name": "Maritime Empires Established",
+      "concepts": [
+        "KC-4.2.II.B",
+        "KC-4.2.II.C",
+        "KC-4.2.II.D",
+        "KC-4.3.II.A.i",
+        "KC-4.3.II.A.ii",
+        "KC-4.3.II.A.iii",
+        "KC-4.3.II.C"
+      ]
+    },
+    "4.5": {
+      "name": "Maritime Empires Maintained and Developed",
+      "concepts": [
+        "KC-4.1.IV",
+        "KC-4.1.IV.C",
+        "KC-4.1.IV.D.i",
+        "KC-4.1.IV.D.ii",
+        "KC-4.1.VI",
+        "KC-4.2.II.A",
+        "KC-4.2.III.C",
+        "KC-4.3.III.ii"
+      ]
+    },
+    "4.6": {
+      "name": "Internal and External Challenges to State Power from 1450 to 1750",
+      "concepts": [
+        "KC-4.3.III.iii",
+        "KC-5.3.III.C"
+      ]
+    },
+    "4.7": {
+      "name": "Changing Social Hierarchies from 1450 to 1750",
+      "concepts": [
+        "KC-4.2.III.A",
+        "KC-4.2.III.B",
+        "KC-4.3.I.B"
+      ]
+    },
+    "4.8": {
+      "name": "Continuity and Change from 1450 to 1750",
+      "concepts": [
+        "KC-4.1",
+        "KC-4.1.II",
+        "KC-4.1.II.A",
+        "KC-4.2",
+        "KC-4.2.II",
+        "KC-4.3",
+        "KC-4.3.III.ii"
+      ]
+    },
+    "5.1": {
+      "name": "The Enlightenment",
+      "concepts": [
+        "KC-5.3.I",
+        "KC-5.3.I.A",
+        "KC-5.3.I.C",
+        "KC-5.3.II.i",
+        "KC-5.3.IV.B"
+      ]
+    },
+    "5.10": {
+      "name": "Continuity and Change in the Industrial Age",
+      "concepts": [
+        "KC-5.1",
+        "KC-5.1.IV",
+        "KC-5.3",
+        "KC-5.3.I",
+        "KC-5.3.I.A",
+        "KC-5.3.II.i"
+      ]
+    },
+    "5.2": {
+      "name": "Nationalism and Revolutions in the Period from 1750 to 1900",
+      "concepts": [
+        "KC-5.3",
+        "KC-5.3.I.B",
+        "KC-5.3.II.ii",
+        "KC-5.3.II.iii",
+        "KC-5.3.III.B",
+        "KC-5.3.IV.A.i"
+      ]
+    },
+    "5.3": {
+      "name": "Industrial Revolution Begins",
+      "concepts": [
+        "KC-5.1.I.A",
+        "KC-5.1.I.C"
+      ]
+    },
+    "5.4": {
+      "name": "Industrialization Spreads in the Period from 1750 to 1900",
+      "concepts": [
+        "KC-5.1.I.D",
+        "KC-5.1.II.B"
+      ]
+    },
+    "5.5": {
+      "name": "Technology of the Industrial Age",
+      "concepts": [
+        "KC-5.1.I.B",
+        "KC-5.1.I.E",
+        "KC-5.1.IV"
+      ]
+    },
+    "5.6": {
+      "name": "Industrialization - Government\u2019s Role from 1750 to 1900",
+      "concepts": [
+        "KC-5.1.V.C",
+        "KC-5.2.II.A"
+      ]
+    },
+    "5.7": {
+      "name": "Economic Developments and Innovations in the Industrial Age",
+      "concepts": [
+        "KC-5.1",
+        "KC-5.1.III.A",
+        "KC-5.1.III.B"
+      ]
+    },
+    "5.8": {
+      "name": "Reactions to the Industrial Economy from 1750 to 1900",
+      "concepts": [
+        "KC-5.1.V.A",
+        "KC-5.1.V.B",
+        "KC-5.1.V.D",
+        "KC-5.3.IV.A.ii"
+      ]
+    },
+    "5.9": {
+      "name": "Society and the Industrial Age",
+      "concepts": [
+        "KC-5.1.VI.A",
+        "KC-5.1.VI.B",
+        "KC-5.1.VI.C"
+      ]
+    },
+    "6.1": {
+      "name": "Rationales for Imperialism from 1750 to 1900",
+      "concepts": [
+        "KC-5.2.III"
+      ]
+    },
+    "6.2": {
+      "name": "State Expansion from 1750 to 1900",
+      "concepts": [
+        "KC-5.2.I.A",
+        "KC-5.2.I.B",
+        "KC-5.2.I.C",
+        "KC-5.2.I.D",
+        "KC-5.2.II.B"
+      ]
+    },
+    "6.3": {
+      "name": "Indigenous Responses to State Expansion from 1750 to 1900",
+      "concepts": [
+        "KC-5.2.II.C",
+        "KC-5.3.III.D",
+        "KC-5.3.III.E"
+      ]
+    },
+    "6.4": {
+      "name": "Global Economic Development from 1750 to 1900",
+      "concepts": [
+        "KC-5.1.II.A"
+      ]
+    },
+    "6.5": {
+      "name": "Economic Imperialism from 1750 to 1900",
+      "concepts": [
+        "KC-5.1.II.C",
+        "KC-5.2.I.E"
+      ]
+    },
+    "6.6": {
+      "name": "Causes of Migration in an Interconnected World",
+      "concepts": [
+        "KC-5.4.I",
+        "KC-5.4.I.B",
+        "KC-5.4.II.A",
+        "KC-5.4.II.B"
+      ]
+    },
+    "6.7": {
+      "name": "Effects of Migration",
+      "concepts": [
+        "KC-5.4.III.A",
+        "KC-5.4.III.B",
+        "KC-5.4.III.C"
+      ]
+    },
+    "6.8": {
+      "name": "Causation in the Imperial Age",
+      "concepts": [
+        "KC-5.1",
+        "KC-5.2",
+        "KC-5.3",
+        "KC-5.4"
+      ]
+    },
+    "7.1": {
+      "name": "Shifting Power After 1900",
+      "concepts": [
+        "KC-6.2.I",
+        "KC-6.2.I.A",
+        "KC-6.2.II.D"
+      ]
+    },
+    "7.2": {
+      "name": "Causes of World War I",
+      "concepts": [
+        "KC-6.2.IV.B.i"
+      ]
+    },
+    "7.3": {
+      "name": "Conducting World War I",
+      "concepts": [
+        "KC-6.1.III.C.i",
+        "KC-6.2.IV.A.i"
+      ]
+    },
+    "7.4": {
+      "name": "Economy in the Interwar Period",
+      "concepts": [
+        "KC-6.3.I.A.i",
+        "KC-6.3.I.B"
+      ]
+    },
+    "7.5": {
+      "name": "Unresolved Tensions After World War I",
+      "concepts": [
+        "KC-6.2.I.B"
+      ]
+    },
+    "7.6": {
+      "name": "Causes of World War II",
+      "concepts": [
+        "KC-6.2.IV.B.ii"
+      ]
+    },
+    "7.7": {
+      "name": "Conducting World War II",
+      "concepts": [
+        "KC-6.1.III.C.ii",
+        "KC-6.2.IV.A.ii"
+      ]
+    },
+    "7.8": {
+      "name": "Mass Atrocities After 1900",
+      "concepts": [
+        "KC-6.2.III.C"
+      ]
+    },
+    "7.9": {
+      "name": "Causation in Global Conflict",
+      "concepts": [
+        "KC-6.1",
+        "KC-6.2",
+        "KC-6.2.I",
+        "KC-6.2.I.A",
+        "KC-6.2.II.D"
+      ]
+    },
+    "8.1": {
+      "name": "Setting the Stage for the Cold War and Decolonization",
+      "concepts": [
+        "KC-6.2.II",
+        "KC-6.2.IV.C.i"
+      ]
+    },
+    "8.2": {
+      "name": "The Cold War",
+      "concepts": [
+        "KC-6.2.IV.C.ii",
+        "KC-6.2.V.B"
+      ]
+    },
+    "8.3": {
+      "name": "Effects of the Cold War",
+      "concepts": [
+        "KC-6.2.IV.D"
+      ]
+    },
+    "8.4": {
+      "name": "Spread of Communism After 1900",
+      "concepts": [
+        "KC-6.2.I.i",
+        "KC-6.2.II.D.i",
+        "KC-6.3.I.A.ii"
+      ]
+    },
+    "8.5": {
+      "name": "Decolonization After 1900",
+      "concepts": [
+        "KC-6.2.I.C",
+        "KC-6.2.II.A",
+        "KC-6.2.II.B"
+      ]
+    },
+    "8.6": {
+      "name": "Newly Independent States",
+      "concepts": [
+        "KC-6.2.III.A.i",
+        "KC-6.2.III.A.ii",
+        "KC-6.2.III.B",
+        "KC-6.3.I.C"
+      ]
+    },
+    "8.7": {
+      "name": "Global Resistance to Established Power Structures After 1900",
+      "concepts": [
+        "KC-6.2.V",
+        "KC-6.2.V.A",
+        "KC-6.2.V.C",
+        "KC-6.2.V.D"
+      ]
+    },
+    "8.8": {
+      "name": "End of the Cold War",
+      "concepts": [
+        "KC-6.2.IV.E"
+      ]
+    },
+    "8.9": {
+      "name": "Causation in the Age of Cold War and Decolonization",
+      "concepts": [
+        "KC-6.2",
+        "KC-6.2.II",
+        "KC-6.2.IV.C",
+        "KC-6.3",
+        "KC-6.3.I"
+      ]
+    },
+    "9.1": {
+      "name": "Advances in Technology and Exchange After 1900",
+      "concepts": [
+        "KC-6.1.I.A",
+        "KC-6.1.I.B",
+        "KC-6.1.I.C",
+        "KC-6.1.I.D",
+        "KC-6.1.III.B"
+      ]
+    },
+    "9.2": {
+      "name": "Technological Advances and Limitations After 1900 - Disease",
+      "concepts": [
+        "KC-6.1.III",
+        "KC-6.1.III.A"
+      ]
+    },
+    "9.3": {
+      "name": "Technological Advances - Debates about the Environment After 1900",
+      "concepts": [
+        "KC-6.1.II.A",
+        "KC-6.1.II.B"
+      ]
+    },
+    "9.4": {
+      "name": "Economics in the Global Age",
+      "concepts": [
+        "KC-6.3.I.D",
+        "KC-6.3.I.E",
+        "KC-6.3.II.B"
+      ]
+    },
+    "9.5": {
+      "name": "Calls for Reform and Responses After 1900",
+      "concepts": [
+        "KC-6.3.II.C",
+        "KC-6.3.III.i",
+        "KC-6.3.III.ii"
+      ]
+    },
+    "9.6": {
+      "name": "Globalized Culture After 1900",
+      "concepts": [
+        "KC-6.3.IV.i",
+        "KC-6.3.IV.ii",
+        "KC-6.3.IV.iii"
+      ]
+    },
+    "9.7": {
+      "name": "Resistance to Globalization After 1900",
+      "concepts": [
+        "KC-6.3.IV.iv"
+      ]
+    },
+    "9.8": {
+      "name": "Institutions Developing in a Globalized World",
+      "concepts": [
+        "KC-6.3.II.A"
+      ]
+    },
+    "9.9": {
+      "name": "Continuity and Change in a Globalized World",
+      "concepts": [
+        "KC-6.1",
+        "KC-6.1.I.A",
+        "KC-6.1.I.B",
+        "KC-6.1.I.C",
+        "KC-6.1.I.D",
+        "KC-6.1.III.B",
+        "KC-6.3.I",
+        "KC-6.3.III.i",
+        "KC-6.3.III.ii",
+        "KC-6.3.IV.i",
+        "KC-6.3.IV.ii",
+        "KC-6.3.IV.iii"
+      ]
+    }
+  },
+  "units": {
+    "1": "The Global Tapestry",
+    "2": "Networks of Exchange",
+    "3": "Land-Based Empires",
+    "4": "Transoceanic Interconnections",
+    "5": "Revolutions",
+    "6": "Consequences of Industrialization",
+    "7": "Global Conflict",
+    "8": "Cold War and Decolonization",
+    "9": "Globalization"
+  },
+  "max_unit": 9
+}

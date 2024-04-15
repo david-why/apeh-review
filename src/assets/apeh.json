@@ -1,4 +1,7 @@
 {
+  "name": "AP European History",
+  "short_name": "APEH",
+  "emoji": "\ud83c\udf0d",
   "concepts": {
     "KC-1.1": {
       "text": "The rediscovery of works from ancient Greece and Rome and observation of the natural world changed many Europeans\u2019 view of their world.",

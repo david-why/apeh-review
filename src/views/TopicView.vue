@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { getData, findTopics, findUnits } from '@/utils'
+import { data } from '@/data'
+import { findTopics, findUnits } from '@/utils'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
-const data = getData()
 
 const id = route.params.id as string
-const topic = computed(() => data.topics[id])
+const topic = computed(() => data.value.topics[id])
 </script>
 
 <template>
@@ -37,8 +37,8 @@ const topic = computed(() => data.topics[id])
   <template v-else>
     <h1>Topics</h1>
     <p>
-      These are the units and topics in the APEH curriculum. Most textbooks, including the CED, are
-      organized via these topics.
+      These are the units and topics in the {{ data.short_name }} curriculum. Most textbooks,
+      including the CED, are organized via these topics.
     </p>
     <p>You can use the sidebar to select a unit/topic to view the concepts within them.</p>
     <a-list :data-source="findUnits()" size="small">

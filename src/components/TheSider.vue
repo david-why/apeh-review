@@ -1,29 +1,31 @@
 <script setup lang="ts">
+import { data } from '@/data'
 import { breadcrumb, getSetting, getStatus } from '@/store'
-import { count, findChildren, findRootConcepts, getData, statusStyle } from '@/utils'
+import { count, findChildren, findRootConcepts, statusStyle } from '@/utils'
 import type { DataNode } from 'ant-design-vue/es/tree'
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter, type RouteLocationNormalized } from 'vue-router'
 const router = useRouter()
 const route = useRoute()
 
 const sider = ref<HTMLDivElement>()
 
-const data = getData()
-const root = findRootConcepts()
+const root = computed(findRootConcepts)
 
-const titles: Record<string, string> = {
-  home: 'Home',
-  concept: 'Concepts',
-  topic: 'Topics'
-}
-
-for (let unit = 1; unit <= data.max_unit; unit++) {
-  titles[`TP-${unit}`] = `Unit ${unit}. ${data.units[unit]}`
-}
-for (const topic of Object.keys(data.topics)) {
-  titles[`TP-${topic}`] = `${topic}. ${data.topics[topic].name}`
-}
+const titles = computed(() => {
+  const titles: Record<string, string> = {
+    home: 'Home',
+    concept: 'Concepts',
+    topic: 'Topics'
+  }
+  for (let unit = 1; unit <= data.value.max_unit; unit++) {
+    titles[`TP-${unit}`] = `Unit ${unit}. ${data.value.units[unit]}`
+  }
+  for (const topic of Object.keys(data.value.topics)) {
+    titles[`TP-${topic}`] = `${topic}. ${data.value.topics[topic].name}`
+  }
+  return titles
+})
 
 const treeData = computed(() => {
   const tree: DataNode[] = [{ key: 'home', title: 'Home' }]
@@ -35,7 +37,7 @@ const treeData = computed(() => {
     for (const child of children) {
       const childNode: DataNode = {
         key: child,
-        title: child + (data.concepts[child].custom ? ' (*)' : ''),
+        title: child + (data.value.concepts[child].custom ? ' (*)' : ''),
         children: [],
         style: statusStyle[getStatus(child)]
       }
@@ -47,7 +49,7 @@ const treeData = computed(() => {
   const topicNode = { key: 'topic', title: 'Topics', children: [] as DataNode[] }
   let curUnit = 0
   let curNode = null
-  for (const topic of Object.keys(data.topics).sort((a, b) => {
+  for (const topic of Object.keys(data.value.topics).sort((a, b) => {
     const [unitA, topicA] = a.split('.').map(Number)
     const [unitB, topicB] = b.split('.').map(Number)
     return unitA - unitB || topicA - topicB
@@ -57,13 +59,16 @@ const treeData = computed(() => {
       curUnit = unit
       curNode = {
         key: `TP-${unit}`,
-        title: `Unit ${unit}. ${data.units[unit]}`,
+        title: `Unit ${unit}. ${data.value.units[unit]}`,
         children: [] as DataNode[]
       }
       // titles[`TP-${unit}`] = `Unit ${unit}`
       topicNode.children.push(curNode)
     }
-    curNode.children.push({ key: `TP-${topic}`, title: `${topic}. ${data.topics[topic].name}` })
+    curNode.children.push({
+      key: `TP-${topic}`,
+      title: `${topic}. ${data.value.topics[topic].name}`
+    })
     // titles[`TP-${topic}`] = `${topic}. ${data.topics[topic].name}`
   }
   tree.push(topicNode)
@@ -73,7 +78,7 @@ const treeData = computed(() => {
     title: 'Concepts',
     children: [] as DataNode[]
   }
-  for (const id of root) {
+  for (const id of root.value) {
     const node: DataNode = {
       key: id,
       title: id,
@@ -92,11 +97,19 @@ const treeData = computed(() => {
 const selected = ref(['concept'])
 const expanded = ref(['concept', 'topic'])
 
+watch(data, () => {
+  selected.value = ['concept']
+  expanded.value = ['concept', 'topic']
+  if (getSetting('expandDefault')) {
+    expandAll()
+  }
+})
+
 function onSelect(selectedKeys: (string | number)[], info: { node: { key: string | number } }) {
   const key = info.node.key
   if (sider.value) {
     const node = document.evaluate(
-      `//*[text()="${titles[key] || key}" or text()="${key + ' (*)'}"]`,
+      `//*[text()="${titles.value[key] || key}" or text()="${key + ' (*)'}"]`,
       sider.value,
       null,
       XPathResult.FIRST_ORDERED_NODE_TYPE,
@@ -249,12 +262,12 @@ function onKeyDown(ev: KeyboardEvent) {
     } else if (current.startsWith('TP-') && !current.includes('.')) {
       setSelect(current + '.1')
     } else if (current.startsWith('TP-')) {
-      const children = data.topics[current.substring(3)].concepts
+      const children = data.value.topics[current.substring(3)].concepts
       if (children.length) {
         setSelect(children[0])
       }
     } else if (current === 'concept') {
-      setSelect(root[0])
+      setSelect(root.value[0])
     } else if (current === 'topic') {
       setSelect('TP-1')
     } else if (current === 'home') {
@@ -266,18 +279,20 @@ function onKeyDown(ev: KeyboardEvent) {
       if (current.includes('.')) {
         const [unit, topic] = current.substring(3).split('.').map(Number)
         const next = `${unit}.${topic + 1}`
-        if (data.topics[next]) {
+        if (data.value.topics[next]) {
           setSelect(`TP-${next}`)
         }
       } else {
         const unit = Number(current.substring(3))
-        if (unit + 1 <= data.max_unit) {
+        if (unit + 1 <= data.value.max_unit) {
           setSelect(`TP-${unit + 1}`)
         }
       }
     } else if (current.startsWith('KC-')) {
       const siblings =
-        count(current, '.') > 1 ? findChildren(current.split('.').slice(0, -1).join('.')) : root
+        count(current, '.') > 1
+          ? findChildren(current.split('.').slice(0, -1).join('.'))
+          : root.value
       const idx = siblings.indexOf(current)
       if (idx < siblings.length - 1) {
         setSelect(siblings[idx + 1])
@@ -291,7 +306,7 @@ function onKeyDown(ev: KeyboardEvent) {
       if (current.includes('.')) {
         const [unit, topic] = current.substring(3).split('.').map(Number)
         const prev = `${unit}.${topic - 1}`
-        if (data.topics[prev]) {
+        if (data.value.topics[prev]) {
           setSelect(`TP-${prev}`)
         }
       } else {
@@ -302,7 +317,9 @@ function onKeyDown(ev: KeyboardEvent) {
       }
     } else if (current.startsWith('KC-')) {
       const siblings =
-        count(current, '.') > 1 ? findChildren(current.split('.').slice(0, -1).join('.')) : root
+        count(current, '.') > 1
+          ? findChildren(current.split('.').slice(0, -1).join('.'))
+          : root.value
       const idx = siblings.indexOf(current)
       if (idx > 0) {
         setSelect(siblings[idx - 1])
@@ -333,6 +350,8 @@ onUnmounted(() => {
   document.removeEventListener('keydown', onKeyDown)
   removeAfterEach.value()
 })
+
+watch(treeData, console.log)
 </script>
 
 <template>

@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import CompletionCounter from '@/components/CompletionCounter.vue'
+import { data } from '@/data'
 </script>
 
 <template>
   <div class="header-content">
     <a-button class="logo-btn" type="ghost" @click="$router.push('/')">
-      🌍 David's APEH Review Tree
+      {{ data.emoji }} David's {{ data.short_name }} Review Tree
     </a-button>
     <CompletionCounter></CompletionCounter>
   </div>

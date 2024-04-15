@@ -1,27 +1,6 @@
-import data from '@/assets/data.json'
+import { data } from '@/data'
 import type { Status } from '@/store'
-import type { CSSProperties } from 'vue'
-
-declare interface Data {
-  concepts: {
-    [key: string]: {
-      text: string
-      examples: string[]
-      topics: string[]
-      custom: boolean
-    }
-  }
-  topics: {
-    [key: string]: {
-      name: string
-      concepts: string[]
-    }
-  }
-  units: {
-    [key: string]: string
-  }
-  max_unit: number
-}
+import { type CSSProperties } from 'vue'
 
 export const statusStyle: Record<Status, CSSProperties> = {
   'not-started': {},
@@ -52,28 +31,24 @@ export function findDiff<T>(larger: T[], smaller: T[]): T[] {
   return larger.filter((item) => !smaller.includes(item))
 }
 
-export function getData(): Data {
-  return data
-}
-
 export function findChildren(id: string): string[] {
   return sortConcepts(
-    Object.keys(data.concepts).filter(
+    Object.keys(data.value.concepts).filter(
       (key) => key.startsWith(id + '.') && count(key, '.') === count(id, '.') + 1
     )
   )
 }
 
 export function findTopics(unit: number): string[] {
-  return Object.keys(data.topics)
+  return Object.keys(data.value.topics)
     .filter((key) => key.startsWith(unit + '.'))
     .sort((a, b) => Number(a.split('.')[1]) - Number(b.split('.')[1]))
 }
 
 export function findUnits(): string[] {
-  return Object.keys(data.units).sort()
+  return Object.keys(data.value.units).sort()
 }
 
 export function findRootConcepts(): string[] {
-  return sortConcepts(Object.keys(data.concepts).filter((key) => count(key, '.') === 1))
+  return sortConcepts(Object.keys(data.value.concepts).filter((key) => count(key, '.') === 1))
 }

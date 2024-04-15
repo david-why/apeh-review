@@ -26,8 +26,9 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          data: ['@/assets/data.json'],
-          antd2: ['ant-design-vue/es/tree'],
+          apwh: ['@/assets/apwh.json'],
+          apeh: ['@/assets/apeh.json'],
+          'antd-tree': ['ant-design-vue/es/tree'],
           antd: ['ant-design-vue']
         }
       }

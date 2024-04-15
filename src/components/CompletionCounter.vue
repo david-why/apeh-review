@@ -1,8 +1,7 @@
 <script setup lang="ts">
+import { data } from '@/data'
 import { getLocalState, type Status } from '@/store'
-import { getData } from '@/utils'
 import { computed } from 'vue'
-const data = getData()
 
 function count(status: Status) {
   let count = 0
@@ -11,7 +10,7 @@ function count(status: Status) {
     return 0
   }
   for (const concept of Object.keys(state)) {
-    if (data.concepts[concept] && state[concept] === status) {
+    if (data.value.concepts[concept] && state[concept] === status) {
       count++
     }
   }
@@ -22,7 +21,7 @@ const completed = computed(() => {
   return count('reviewed')
 })
 const total = computed(() => {
-  return Object.keys(data.concepts).length - count('skipped')
+  return Object.keys(data.value.concepts).length - count('skipped')
 })
 const percent = computed(() => {
   completed.value

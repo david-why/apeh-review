@@ -1,7 +1,11 @@
 <script setup lang="ts">
+import { data, datasource, datasources } from '@/data'
 import { getLocalState, getSetting, setLocalState, setSetting } from '@/store'
 import { notification } from 'ant-design-vue'
 import { computed, ref } from 'vue'
+
+const firstTopic = computed(() => Object.keys(data.value.topics)[0])
+const firstConcept = computed(() => Object.keys(data.value.concepts)[0])
 
 const resetModalOpen = ref(false)
 const proSwitch = computed({
@@ -14,12 +18,12 @@ const expandDefault = computed({
 })
 
 function exportProgress() {
-  const data = JSON.stringify(getLocalState())
-  const blob = new Blob([data], { type: 'application/json' })
+  const state = JSON.stringify(getLocalState())
+  const blob = new Blob([state], { type: 'application/json' })
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
-  a.download = 'apeh-review-tree-progress.json'
+  a.download = data.value.short_name.toLowerCase() + '-review-tree-progress.json'
   a.click()
   URL.revokeObjectURL(url)
 }
@@ -49,25 +53,32 @@ function resetProgress() {
 </script>
 
 <template>
-  <h1>Welcome to APEH Review Tree!</h1>
+  <a-radio-group v-model:value="datasource">
+    <a-radio-button v-for="(value, key) in datasources" :key="key" :value="key">
+      {{ value.emoji }} {{ value.short_name }}
+    </a-radio-button>
+  </a-radio-group>
+  <h1>Welcome to {{ data.short_name }} Review Tree!</h1>
   <p>
-    This is a website to help you review for your AP European History exam. Most of the content here
-    is taken directly from the AP Course and Exam Description (CED), so you don't need to worry
-    about false information.
+    This is a website to help you review for your {{ data.name }} exam. Most of the content here is
+    taken directly from the AP Course and Exam Description (CED), so you don't need to worry about
+    false information.
   </p>
   <p>The website is organized into two major sections: Topics and Concepts.</p>
   <h2>Topics</h2>
   <p>
-    Topics are what you often see in your textbook, for example "1.1 Contextualizing Renaissance and
-    Discovery". Most people study by topics, so this is a good place to start.
+    Topics are what you often see in your textbook, for example "{{ firstTopic }}
+    {{ data.topics[firstTopic].name }}". Most people study by topics, so this is a good place to
+    start.
   </p>
   <p>Go to <router-link to="/topic">Topics</router-link> to begin!</p>
   <h2>Concepts</h2>
   <p>
     Concepts are less well-known than topics. They are called "Key Concepts" in the CED, and
-    basically, thet are everything that you need to know for the exam. For example, "KC-1.1.I A
-    revival of classical texts led to new methods of scholarship and new values in both society and
-    religion." is a concept.
+    basically, thet are everything that you need to know for the exam. For example, "{{
+      firstConcept
+    }}
+    {{ data.concepts[firstConcept].text }}" is a concept.
   </p>
   <p>
     Some concepts have "Illustrative Examples" in the CED to go with them. These are also included

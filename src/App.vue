@@ -1,7 +1,23 @@
 <script setup lang="ts">
 import TheHeader from '@/components/TheHeader.vue'
 import TheSider from '@/components/TheSider.vue'
+import { data, datasource } from '@/data'
 import { breadcrumb } from '@/store'
+import { onMounted, watch } from 'vue'
+
+watch(datasource, () => {
+  document.title = data.value.short_name + ' Review Tree'
+})
+
+onMounted(() => {
+  document.title = data.value.short_name + ' Review Tree'
+  console.log(location.search)
+  new URLSearchParams(location.search).forEach((value, key) => {
+    if (key === 'datasource' && ['apeh', 'apwh'].includes(value)) {
+      datasource.value = value as 'apeh' | 'apwh'
+    }
+  })
+})
 </script>
 
 <template>
