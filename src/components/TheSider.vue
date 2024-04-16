@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { data } from '@/data'
+import { data, datasource } from '@/data'
 import { breadcrumb, getSetting, getStatus } from '@/store'
 import { count, findChildren, findRootConcepts, statusStyle } from '@/utils'
 import type { DataNode } from 'ant-design-vue/es/tree'
@@ -97,12 +97,14 @@ const treeData = computed(() => {
 const selected = ref(['concept'])
 const expanded = ref(['concept', 'topic'])
 
-watch(data, () => {
-  selected.value = ['concept']
-  expanded.value = ['concept', 'topic']
-  if (getSetting('expandDefault')) {
-    expandAll()
-  }
+watch(datasource, () => {
+  setTimeout(() => {
+    selected.value = ['concept']
+    expanded.value = ['concept', 'topic']
+    if (getSetting('expandDefault')) {
+      expandAll()
+    }
+  }, 20)
 })
 
 function onSelect(selectedKeys: (string | number)[], info: { node: { key: string | number } }) {
@@ -350,8 +352,6 @@ onUnmounted(() => {
   document.removeEventListener('keydown', onKeyDown)
   removeAfterEach.value()
 })
-
-watch(treeData, console.log)
 </script>
 
 <template>

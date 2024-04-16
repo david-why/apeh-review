@@ -1,5 +1,5 @@
 import { data, datasource, datasources } from '@/data'
-import { ref, watch } from 'vue'
+import { computed, ref } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
 
 export const breadcrumb = ref([] as { name: string; to?: RouteLocationRaw }[])
@@ -41,61 +41,53 @@ const conv: Record<keyof typeof datasources, Record<string, string>[]> = {
   apwh: []
 }
 
-const localState = JSON.parse(
-  localStorage.getItem(data.value.short_name.toLowerCase() + '-review-state') ||
-    JSON.stringify({ version: curVersion[datasource.value] })
-)
-
-watch(data, () => {
-  Object.keys(localState).forEach((key) => {
-    delete localState[key]
-  })
-  Object.assign(
-    localState,
-    JSON.parse(
-      localStorage.getItem(data.value.short_name.toLowerCase() + '-review-state') ||
-        JSON.stringify({ version: curVersion[datasource.value] })
-    )
-  )
-})
-
 const stateCounter = ref(0)
 
-export function getLocalState(): Record<string, Status> {
-  stateCounter.value
-  const version = localState.version || 0
-  if (localState.version !== curVersion[datasource.value]) {
-    for (let i = version; i < curVersion[datasource.value]; i++) {
-      for (const key in conv[datasource.value][i]) {
-        if (localState[key] !== undefined) {
-          localState[conv[datasource.value][i][key]] = localState[key]
-          delete localState[key]
+const localState = computed<Record<string, Status>>({
+  get: () => {
+    stateCounter.value
+    const value = JSON.parse(
+      window.localStorage.getItem(data.value.short_name.toLowerCase() + '-review-state') ||
+        JSON.stringify({ version: curVersion[datasource.value] })
+    )
+    const version = value.version || 0
+    if (value.version !== curVersion[datasource.value]) {
+      for (let i = version; i < curVersion[datasource.value]; i++) {
+        for (const key in conv[datasource.value][i]) {
+          if (value[key] !== undefined) {
+            value[conv[datasource.value][i][key]] = value[key]
+            delete value[key]
+          }
         }
       }
+      value.version = curVersion[datasource.value]
+      localState.value = value
     }
-    localState.version = curVersion[datasource.value]
+    return value
+  },
+  set: (value) => {
+    window.localStorage.setItem(
+      data.value.short_name.toLowerCase() + '-review-state',
+      JSON.stringify(value)
+    )
+    stateCounter.value++
   }
-  return localState
+})
+
+export function getLocalState(): Record<string, Status> {
+  return localState.value
 }
 
 export function setLocalState(state: Record<string, Status>) {
-  Object.keys(localState).forEach((key) => {
-    delete localState[key]
-  })
-  Object.assign(localState, state)
-  localStorage.setItem(data.value.short_name.toLowerCase().toLowerCase() + '-review-state', JSON.stringify(localState))
-  stateCounter.value++
+  localState.value = state
 }
 
 export function getStatus(id: string): Status {
-  return getLocalState()[id] || 'not-started'
+  return localState.value[id] || 'not-started'
 }
 
 export function setStatus(id: string, status: Status) {
-  const localState = getLocalState()
-  localState[id] = status
-  localStorage.setItem(data.value.short_name.toLowerCase() + '-review-state', JSON.stringify(localState))
-  stateCounter.value++
+  localState.value = Object.assign(localState.value, { [id]: status })
 }
 
 declare interface Settings {
@@ -107,11 +99,16 @@ const settingsCounter = ref(0)
 
 export function getSettings() {
   settingsCounter.value
-  return JSON.parse(localStorage.getItem(data.value.short_name.toLowerCase() + '-review-settings') || '{}')
+  return JSON.parse(
+    localStorage.getItem(data.value.short_name.toLowerCase() + '-review-settings') || '{}'
+  )
 }
 
 export function setSettings(settings: Record<string, any>) {
-  localStorage.setItem(data.value.short_name.toLowerCase() + '-review-settings', JSON.stringify(settings))
+  localStorage.setItem(
+    data.value.short_name.toLowerCase() + '-review-settings',
+    JSON.stringify(settings)
+  )
   settingsCounter.value++
 }
 
