@@ -38,5 +38,5 @@ export const data = computed<Data>(() => {
 })
 
 watch(datasource, (value) => {
-  history.pushState(null, '', '?datasource=' + value)
+  history.pushState(history.state, '', '?datasource=' + value)
 })
