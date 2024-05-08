@@ -12,9 +12,9 @@ const conceptExample = computed(
 
 const options = [
   { label: '⬜ None', value: 'not-started' },
+  { label: '✅ Done', value: 'reviewed' },
   { label: '⏭ Skip', value: 'skipped' },
-  { label: '🚩 Flag', value: 'flagged' },
-  { label: '✅ Done', value: 'reviewed' }
+  { label: '🚩 Flag', value: 'flagged' }
 ]
 const shortOptions = options.map(({ label, value }) => ({ label: label.substring(0, 2), value }))
 
