@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { data, datasource, datasources } from '@/data'
+import { data, datasource, datasources, uploadServiceUrl } from '@/data'
 import { getLocalState, getSetting, setLocalState, setSetting } from '@/store'
 import { notification } from 'ant-design-vue'
 import { computed, ref } from 'vue'
@@ -49,6 +49,56 @@ function resetProgress() {
   resetModalOpen.value = false
   setLocalState({})
   notification.info({ message: 'Progress reset successfully!' })
+}
+
+function validateKey(key: string) {
+  return /^[a-zA-Z0-9_-]+$/.test(key)
+}
+
+function upload() {
+  const state = JSON.stringify(getLocalState())
+  const key = prompt('Enter a key to save your progress:')
+  if (!key || !validateKey(key)) {
+    return
+  }
+  fetch(uploadServiceUrl + key, {
+    method: 'POST',
+    body: state,
+    headers: { 'Content-Type': 'application/json' }
+  })
+    .then((res) => res.json())
+    .then((res) => {
+      if (res.success) {
+        notification.info({ message: 'Progress uploaded successfully!' })
+      } else {
+        notification.error({ message: 'Failed to upload progress!' })
+      }
+    })
+    .catch(() => {
+      console.error(arguments)
+      notification.error({ message: 'Failed to upload progress!' })
+    })
+}
+
+function download() {
+  const key = prompt('Enter the key to download your progress:')
+  if (!key || !validateKey(key)) {
+    return
+  }
+  fetch(uploadServiceUrl + key)
+    .then((res) => res.json())
+    .then((state) => {
+      if (!state.success) {
+        notification.error({ message: 'Failed to download progress!' })
+      } else {
+        setLocalState(state.data)
+        notification.info({ message: 'Progress downloaded successfully!' })
+      }
+    })
+    .catch(() => {
+      console.error(arguments)
+      notification.error({ message: 'Failed to download progress!' })
+    })
 }
 </script>
 
@@ -148,6 +198,11 @@ function resetProgress() {
     <a-space>
       <a-switch id="expandDefault" v-model:checked="expandDefault"></a-switch>
       <label for="expandDefault">Expand all items by default</label>
+    </a-space>
+    <h2>Experimental</h2>
+    <a-space>
+      <a-button @click="upload">Upload progress</a-button>
+      <a-button @click="download">Download progress</a-button>
     </a-space>
   </template>
   <a-modal

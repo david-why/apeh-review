@@ -37,6 +37,8 @@ export const data = computed<Data>(() => {
   return datasources[datasource.value]
 })
 
+export const uploadServiceUrl = 'https://apeh-review-backend.azurewebsites.net/api/items/'
+
 watch(datasource, (value) => {
   history.pushState(history.state, '', '?datasource=' + value)
 })
